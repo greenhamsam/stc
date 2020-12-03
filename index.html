@@ -227,13 +227,24 @@ Your choices will determine whether humanity will survive the 21st century.
 
 --
 
-Credits
-About
+(link-reveal: &quot;Credits&quot;)[
+Created by Sam Beckbessinger, Simon Nicholson and Christopher Trisos
+
+Featuring short fiction by Lauren Beukes, Rajat Chaudhuri, Maria Turtschaninoff and Sophia Al-Maria
+
+Invaluable scientific contributions by (all names here) co-ordinated through the National Socio-Environmental Synthesis Center (SESYNC) of the University of Maryland
+
+Supported by (funders)
+]
+
+(link-reveal: &quot;About&quot;)[
+About content here
+]
 
 (set: $temp to 1)
 (set: $decade to &quot;2020s&quot;)</tw-passagedata><tw-passagedata pid="2" name="Welcome to 2021" tags="" position="525,486" size="100,100">It&#39;s January 2021.
 
-As a busy and informed person, you&#39;re aware that the world is running out of time to address the climate emergency.
+As an important and informed person, you&#39;re aware that the world is running out of time to address the climate emergency.
 
 But the only thing your readers want to talk about is this pesky pandemic.
 
@@ -323,7 +334,7 @@ In 2028, scientists produce a report saying that despite the decline in manufact
 
 [[You made it to 2030-&gt;Welcome to 2030 (Designer Planet)]] 
 
-(set: $temp to 1.6)</tw-passagedata><tw-passagedata pid="11" name="Welcome to 2030 (Ecotopia)" tags="" position="327,1404" size="100,100">&lt;div class=&quot;Newspaper&quot;&gt;
+(set: $temp to 1.6)</tw-passagedata><tw-passagedata pid="11" name="Welcome to 2030 (Ecotopia)" tags="" position="325,1414" size="100,100">&lt;div class=&quot;Newspaper&quot;&gt;
 
 &lt;div class=&quot;NHeader&quot;&gt;
   &lt;div class=&quot;NHeading&quot;&gt;
@@ -407,7 +418,7 @@ Countries quietly start to divert post-Covid economic stimulus money into beefin
 
 [[You made it to 2030-&gt;Welcome to 2030 (Climate Wars)]] 
 
-(set: $temp to 1.5)</tw-passagedata><tw-passagedata pid="14" name="Welcome to 2030 (Slow Fade)" tags="" position="468,1405" size="100,100">&lt;div class=&quot;Newspaper&quot;&gt;
+(set: $temp to 1.5)</tw-passagedata><tw-passagedata pid="14" name="Welcome to 2030 (Slow Fade)" tags="" position="473,1412" size="100,100">&lt;div class=&quot;Newspaper&quot;&gt;
 
 &lt;div class=&quot;NHeader&quot;&gt;
   &lt;div class=&quot;NHeading&quot;&gt;
@@ -567,7 +578,7 @@ Shell builds thousands of carbon capture machines across Australian outback: &qu
 [[What will this new decade bring?-&gt;Grassroots inequality rebellion]] 
 
 (set: $temp to 1.6)
-(set: $decade to &quot;2030s&quot;)</tw-passagedata><tw-passagedata pid="17" name="Welcome to 2030 (Designer Planet)" tags="" position="893,1387" size="100,100">&lt;div class=&quot;Newspaper&quot;&gt;
+(set: $decade to &quot;2030s&quot;)</tw-passagedata><tw-passagedata pid="17" name="Welcome to 2030 (Designer Planet)" tags="" position="900,1399" size="100,100">&lt;div class=&quot;Newspaper&quot;&gt;
 
 &lt;div class=&quot;NHeader&quot;&gt;
   &lt;div class=&quot;NHeading&quot;&gt;
@@ -622,47 +633,67 @@ Environmentalists try to revive remaining polar bear populations after first ice
 [[What will this new decade bring?-&gt;Grassroots inequality rebellion]] 
 
 (set: $temp to 1.7)
-(set: $decade to &quot;2030s&quot;)</tw-passagedata><tw-passagedata pid="18" name="Grassroots climate rebellion" tags="" position="548,1569" size="100,100">There’s a resurgence of the climate rebellion movement. Grassroots groups campaign for change.
-
-The movement is made of disparate voices calling for different solutions. Which of these solutions will your news site focus on?
-
-[[City-led decarbonization]] 
-[[Business-led decarbonization]] 
-[[We need our countries&#39; leaders to act.-&gt;State-led decarbonization]] 
-[[No decarbonization]]
-
-Including calls to lower the voting age to 15. Sure, it means several K-Pop stars get write-in votes, but climate issues get much more attention.
-
-((We COULD also implement a bold carbon tax here - a conservative response.)) </tw-passagedata><tw-passagedata pid="19" name="Grassroots inequality rebellion" tags="" position="761,1569" size="100,100">The world is rocked by a series of mass protests around inequality. People demand change.
+(set: $decade to &quot;2030s&quot;)</tw-passagedata><tw-passagedata pid="18" name="Grassroots climate rebellion" tags="" position="564,1570" size="100,100">There’s a resurgence of the climate rebellion movement. Grassroots groups campaign for change. Millions join a global day of protest, led by schoolchildren.
 
 The movement is made of disparate voices calling for different solutions. 
 
 **Which of these solutions will your news site focus on?**
 
-[[We need jobs!-&gt;No decarbonization]]
+[[We need our countries&#39; leaders to act.-&gt;State-led decarbonization]] 
 
-[[Let&#39;s just give everyone a universal basic income.-&gt;UBI]] </tw-passagedata><tw-passagedata pid="20" name="Transitional fracking" tags="" position="780,2059" size="100,100">Energy companies blame the aggressive climate emission laws for the mass unemployment. They say that they can create a lot of new jobs in fracking, and that can be a transitional energy source while we move off coal. They can even re-invest those profits into carbon capture technology!
+[[We need more passionate climate activists getting involved in local politics.-&gt;City-led decarbonization]] 
+{
+(if: $leaning is &quot;billionaires&quot;)[[[Business leaders should drive change.-&gt;Looser regulations]]]
+}{
+(if: $leaning is &quot;wars&quot;)[[[You heard a rumour that these &quot;protests&quot; are being funded by our national enemies and are just an attempt to undermine democracy.-&gt;Undermine movement (War)]]]
+}{
+(if: $leaning is &quot;slowfade&quot;)[[[Hooligans! These protestors are just looking for an excuse to riot. Let&#39;s publish photos of isolated incidents of vandalism and not mention their proposed solutions at all.-&gt;Undermine movement (Hooligans)]]]
+}</tw-passagedata><tw-passagedata pid="19" name="Grassroots inequality rebellion" tags="" position="777,1566" size="100,100">The world is rocked by a series of mass protests around inequality. People demand change.
 
-Should we launch new large-scale fracking projects?
+The movement is made of disparate voices calling for different solutions. 
 
-[[No. We can&#39;t afford to pollute the air even more.-&gt;Grassroots carbon capture]] 
-[[Yes, but only if the energy companies invest some of their profits in capturing the pollution that’s created.-&gt;Welcome to 2040 (Billionaire Saviours)]] 
-[[Yes, but let&#39;s nationalize this and use the profits to fund a universal basic income.-&gt;Welcome to 2040 (Designer Planet)]] 
+**Which of these solutions will your news site focus on?**
 
-If there&#39;s a carbon tax in this timeline, we&#39;ll need the fracking companies lying about their emissions.</tw-passagedata><tw-passagedata pid="21" name="City-led decarbonization" tags="" position="322,1921" size="100,100">[[Grassroots carbon capture]] 
-NOTE: starting by 2030 would entail some tech-based carbon capture too.</tw-passagedata><tw-passagedata pid="22" name="State-led decarbonization" tags="" position="771,1726" size="100,100">Pressure mounts on national leaders. This leads to the calling of a new [[emergency international climate summit.-&gt;Emissions accounting argument]]</tw-passagedata><tw-passagedata pid="23" name="Business-led decarbonization" tags="" position="639,1894" size="100,100">[[Transitional fracking]]
+[[We need jobs!-&gt;Looser regulations]]
 
-They use Cambridge Analytica-style brain control to change people&#39;s mind about climate change, so they do care about it quite a lot</tw-passagedata><tw-passagedata pid="24" name="No decarbonization" tags="" position="558,1732" size="100,100">Corporations argue that they need tax cuts and looser environnmental regulations so they can grow, and hire more people.
+[[Let&#39;s just give everyone a universal basic income.-&gt;UBI]] </tw-passagedata><tw-passagedata pid="20" name="Transitional fracking" tags="" position="679,1958" size="100,100">Energy companies blame the aggressive climate emission laws for high levels of unemployment. They say that they can create a lot of new jobs in fracking, and that can be a transitional energy source while we move off coal. They can even re-invest those profits into carbon capture technology! A little more pollution now, but it will give us much more money to spend fixing the problem in future.
+
+**Should we approve new large-scale fracking projects?**
+
+[[No. We can&#39;t afford to pollute the air even more.-&gt;Weak reforms]]
+
+[[Yes, but only if the energy companies invest some of their profits in capturing the pollution that’s created.-&gt;Green is the new gold]]
+
+[[Yes, but let&#39;s nationalize this and use the profits to fund a universal basic income.-&gt;People get richer]] 
+
+(set: $fracking to 1)</tw-passagedata><tw-passagedata pid="21" name="City-led decarbonization" tags="" position="400,1740" size="100,100">Confronting the fact that national leaders aren&#39;t going to do enough, María Carlini, the beloved newly elected 27-year-old mayor of Mexico City, calls a World Cities Summit, inviting the mayors of the largest cities from all around the world. 
+
+150 city leaders assemble, together representing 1 billion people, and 1/3 of the world&#39;s economy. They realise that they don&#39;t need to wait for their national leaders to act: there&#39;s a lot they can do on their own.
+
+The cities commit to the 2035-Zero goal: for the combined emissions of all of these citizens to be zero by 2035. This goal is measured collectively - cities that had a headstart in transitionining to greener cities invest in technology to capture greenhouse gases, to offset the emissions by cities that start later. The cities work together, pooling their resources and sharing information about how to change.
+
+These changes immediately make life better for the inhabitants of these cities. Air pollution clears up, there are waves of new jobs in green tech, and there are more green spaces. 
+
+Megacities become even more desirable places to live, and more people move to them. 
+
+**There&#39;s still a lot of inequality, though. What should we do about that?**
+
+[[Fix capitalism!-&gt;City-led capitalist reform]] 
+
+[[Inequality&#39;s fine as long as it spurs innovation.-&gt;Green is the new gold]]</tw-passagedata><tw-passagedata pid="22" name="State-led decarbonization" tags="" position="779,1733" size="100,100">Pressure mounts on national leaders. This leads to the calling of a new [[emergency international climate summit.-&gt;Emissions accounting argument]]</tw-passagedata><tw-passagedata pid="23" name="Looser regulations" tags="" position="633,1811" size="100,100">Corporations argue that they need tax cuts and looser environnmental regulations so they can grow, and hire more people.
 
 A series of tax cuts are passed. Corporations celebrate by launching some high-profile flashy social investment projects, like new schools, hospitals and factories.
 
-But after a couple of years, these promises haven&#39;t actually turned into a lot of new jobs. [[We need to try something else.-&gt;Transitional fracking]] </tw-passagedata><tw-passagedata pid="25" name="Emissions accounting argument" tags="" position="810,1883" size="100,100">At the climate summit, leaders need to agree to increasing emission reduction targets. There’s a debate about whether historical emissions should be counted towards a country’s total target (which would damage the economies of currently rich countries) or whether only current emissions matter (which would impact China and other emerging economies). 
+But after a couple of years, these promises haven&#39;t actually turned into a lot of new jobs. [[We need to try something else.-&gt;Transitional fracking]] </tw-passagedata><tw-passagedata pid="24" name="Emissions accounting argument" tags="" position="856,1925" size="100,100">At the climate summit, leaders need to agree to increasing emission reduction targets. There’s a debate about whether historical emissions should be counted towards a country’s total target (which would damage the economies of currently rich countries) or whether only current emissions matter (which would impact China and other emerging economies). 
 
-How hard should we push rich countries to pay for climate change?
+**How hard should we push rich countries to pay for climate change?**
+
 [[We can&#39;t push too hard, or we risk rich countries just pulling out of the process completely.-&gt;Faffing]]
+
 [[This historical emissions proposal sounds ludicrous!-&gt;That&#39;s a Chinese land grab!]]
-[[Fuck-it, we must get it done NOW-&gt;Welcome to 2040 (Designer Planet)]] 
-((An interfaith group is calling for a radical proposal - leads back to Ecotopia))</tw-passagedata><tw-passagedata pid="26" name="Welcome to 2040 (Ecotopia)" tags="" position="286,2398" size="100,100">Some other news headlines from January 2040:
+
+[[Let&#39;s push! We have no more time to waste.-&gt;Global climate adaptation fund]] </tw-passagedata><tw-passagedata pid="25" name="Welcome to 2040 (Ecotopia)" tags="" position="286,2398" size="100,100">&lt;div class=&quot;Newspaper&quot;&gt;
+(display: &quot;NewsHeader&quot;)
 Criminalisation of carbon emission ends final C02 polluters.
 
 Southern Florida rewilding project launched as extreme events make the region uninhabitable (for all but Florida men)
@@ -680,9 +711,16 @@ Translocated polar bear colony decimates penguins in West Antarctic (unprecedent
 Glacial lakes overflow off Himalayas has increased downstream  agro-ecological productivity by 50%, leading to a peaceful truce between India and Pakistan (* backroad to climate war if resource access, triggered by a cricket match, goes wrong)
 
 Global success of net zero means that we’re on track to peak temperature in the next decade
+&lt;/div&gt;
+
+[[Everybody&#39;s feeling optimistic about the 2040s!-&gt;Refugee crisis + resilient world]] 
 
 
-[[Everybody&#39;s feeling optimistic about the 2040s!-&gt;Refugee crisis + resilient world]] </tw-passagedata><tw-passagedata pid="27" name="Welcome to 2040 (Slow Fade)" tags="" position="487,2405" size="100,100">Some news headlines from January 2040:
+
+to get people to stop eating meat. We need to build differnet kinds of buildings, replace old gas heating systems, and power our cities in different ways. 
+
+(Living buildings, filled with bacteria, that are self-healing and sequester carbon)
+</tw-passagedata><tw-passagedata pid="26" name="Welcome to 2040 (Slow Fade)" tags="" position="487,2405" size="100,100">Some news headlines from January 2040:
 Climate Activists Stage Sit-In at World Economic Forum in Davos
 
 Turmoil as Canada, Russia, and the US  Walk Out of Emergency Climate Summit in the Maldives
@@ -694,7 +732,7 @@ Record-low Rainfall “Global Warming Sign” of Amazon Rainforest Ecosystem Col
 
 The African Union’s Green Great Wall Slows Sahara’s Southward March
 
-[[Everybody&#39;s feeling optimistic about the 2040s!-&gt;Refugee crisis + slow fade world]] </tw-passagedata><tw-passagedata pid="28" name="Welcome to 2040 (Billionaire Saviours)" tags="" position="652,2396" size="100,100">Some news headlines from January 2040:
+[[Everybody&#39;s feeling optimistic about the 2040s!-&gt;Refugee crisis + slow fade world]] </tw-passagedata><tw-passagedata pid="27" name="Welcome to 2040 (Billionaire Saviours)" tags="" position="677,2392" size="100,100">Some news headlines from January 2040:
 
 “Trade in your $US for new CitiAmazon Chit” Amazon buys/merges  Citibank (or some other bank)
 
@@ -726,7 +764,7 @@ Second dust bowl in Midwest U.S. as Ogallala aquifer depleted
 
 “What’s for Breakfast? Algae is the new Colombian” Running out of coffee; bananas are extinct. 
 
-[[Everybody&#39;s feeling optimistic about the 2040s!-&gt;Refugee crisis + billionaire world]] </tw-passagedata><tw-passagedata pid="29" name="Welcome to 2040 (Designer Planet)" tags="" position="860,2396" size="100,100">Some news headlines from January 2040:
+[[Everybody&#39;s feeling optimistic about the 2040s!-&gt;Refugee crisis + billionaire world]] </tw-passagedata><tw-passagedata pid="28" name="Welcome to 2040 (Designer Planet)" tags="" position="1134,2383" size="100,100">Some news headlines from January 2040:
 
 Number of cases of lung cancer linked to air pollution grows exponentially - BEST NEW FACE MASKS TO MATCH YOUR WEDDING SARI
 
@@ -766,7 +804,7 @@ Not the dust bowl, but the hot water bowl? Millions of U.S. citizens move North 
 
 [[Everybody&#39;s feeling optimistic about the 2040s!-&gt;Sexual revolution]] 
 
-((First floating farms. New &quot;land&quot; rights about the ocean, which could tip you into climate wars?))</tw-passagedata><tw-passagedata pid="30" name="Welcome to 2040 (Climate Wars)" tags="" position="1028,2397" size="100,100">Some news headlines from January 2040:
+((First floating farms. New &quot;land&quot; rights about the ocean, which could tip you into climate wars?))</tw-passagedata><tw-passagedata pid="29" name="Welcome to 2040 (Climate Wars)" tags="" position="843,2389" size="100,100">Some news headlines from January 2040:
 A new economic order is on the rise. Belt and road countries leave the WTO to join China in a new trading organization.
 
 Japan and New Zealand deny asylum to boats of migrants looking for asylum after fisheries collapse in the Pacific.
@@ -777,26 +815,30 @@ Reinsurance companies file for bankruptcy as Arabian Sea Cyclones batter Indian 
 
 Forced relocation from Sundarbans sparks widespread violence in eastern India
 
-[[Everybody&#39;s feeling optimistic about the 2040s!-&gt;Refugee crisis + climate war world]] </tw-passagedata><tw-passagedata pid="31" name="Easier climate conference" tags="" position="328,1570" size="100,100">The northern hemisphere&#39;s summer of 2031 is particularly brutal: hurricanes and wildfires batter the U.S. while hundreds die in a heatwave across Southern Europe and central Asia.
+[[Everybody&#39;s feeling optimistic about the 2040s!-&gt;Refugee crisis + climate war world]] </tw-passagedata><tw-passagedata pid="30" name="Easier climate conference" tags="" position="321,1568" size="100,100">The northern hemisphere&#39;s summer of 2031 is particularly brutal: hurricanes and wildfires batter the U.S. while hundreds die in a heatwave across Southern Europe and central Asia.
 
-The world calls a new global climate conference in November 2031. We&#39;ve gained some momentum on climate change, but clearly a lot more needs to be done. 
+In November 2031, the world calls a new global climate conference. We&#39;ve gained some momentum on climate change, but clearly a lot more needs to be done.
 
-**How aggressive should we be about reducing emissions?**
+**Every world leader reads your news site, so tell them: how aggressive should we be about reducing greenhouse gas emissions?**
 
-[[There&#39;s no time to waste. Let&#39;s aim for net zero emissions by 2035, regardless of how hard it is.-&gt;Pay for transition]]
+[[There&#39;s no time to waste. Let&#39;s commit to net zero emissions by 2035, regardless of how hard it is.-&gt;Pay for transition]]
 
-Let&#39;s focus on high-impact technological solutions.
+[[Let&#39;s prioritise switching over to renewable energy, but not do anything that&#39;s going to interfere with peoples&#39; lifestyles.-&gt;City-led decarbonization]]</tw-passagedata><tw-passagedata pid="31" name="City-led capitalist reform" tags="" position="271,2151" size="100,100">We tax the rich and invest in public infrastructure and generous grant programmes.
 
-Let&#39;s prioritise only reigning in the big corporate polluters, not interfering with people&#39;s lifestyles.
+Freed from constant worry about their next paycheque, we start to see a lot of experiments in new forms of communal and sustainable urban living. 
 
-Slow and steady.</tw-passagedata><tw-passagedata pid="32" name="Grassroots carbon capture" tags="" position="298,2163" size="100,100">Reformed capitalism: more B-corps, more stakeholders on boards.
+We start reforming capitalism with new rules like employee representation on boards. The gap between rich and poor closes. 
 
-[[Welcome to 2040 (Ecotopia)]] </tw-passagedata><tw-passagedata pid="33" name="Refugee crisis + climate war world" tags="" position="1030,2578" size="100,100">Tragic disasters like ongoing flooding in Bangladesh mean there are now 500-million new climate refugees.
+A lot of carbon capture projects happen on a grassroots level as co-operatives/community-owned projects.
+
+The rich have #sadfeels about all this. Nobody cares.
+
+[[[Congrats! You made it to 2040!-&gt;Welcome to 2040 (Ecotopia)]] </tw-passagedata><tw-passagedata pid="32" name="Refugee crisis + climate war world" tags="" position="860,2545" size="100,100">Tragic disasters like ongoing flooding in Bangladesh mean there are now 500-million new climate refugees.
 
 How should society respond?
 [[There are just too many people. Let&#39;s build refugee camps.-&gt;Permanent refugee camps]] 
 [[Every country should have to accept a number of refugees proportional to their GDP.-&gt;Refugee conflict]]
-[[Migrants should be settled internally, somewhere else in their own country.-&gt;Civil war version]]</tw-passagedata><tw-passagedata pid="34" name="Refugee crisis + resilient world" tags="" position="300,2603" size="100,100">Tragic disasters like droughts in South America mean there are now 100-million new climate refugees across the Americas. 
+[[Migrants should be settled internally, somewhere else in their own country.-&gt;Civil war version]]</tw-passagedata><tw-passagedata pid="33" name="Refugee crisis + resilient world" tags="" position="300,2603" size="100,100">Tragic disasters like droughts in South America mean there are now 100-million new climate refugees across the Americas. 
 (Broaden to general internal displacement all around the globe)
 
 Millions want to resettle in more protected places, but there are housing shortages everywhere.
@@ -804,20 +846,20 @@ Millions want to resettle in more protected places, but there are housing shorta
 How should society respond?
 [[Let&#39;s build new public housing in cities.-&gt;Increasing densification]]
 
-[[Only if they work-&gt;Employment as citizenship]] / change this to open up housing restrictions so private businesses are incentivised to offer housing.</tw-passagedata><tw-passagedata pid="35" name="Refugee crisis + billionaire world" tags="" position="662,2608" size="100,100">Tragic disasters (like the collapse of fish stocks across the Pacific) mean there are now 250-million climate refugees.
+[[Only if they work-&gt;Employment as citizenship]] / change this to open up housing restrictions so private businesses are incentivised to offer housing.</tw-passagedata><tw-passagedata pid="34" name="Refugee crisis + billionaire world" tags="" position="662,2608" size="100,100">Tragic disasters (like the collapse of fish stocks across the Pacific) mean there are now 250-million climate refugees.
 
 How should society respond?
 [[Let&#39;s set up corporate-sponsored work camps so they can contribute to society.-&gt;Employment as citizenship]] 
 [[Human Capital]]
-</tw-passagedata><tw-passagedata pid="36" name="Strongmen" tags="" position="1029,2863" size="100,100">Each new strongman leader blames the others for creating the migrant crisis.
+</tw-passagedata><tw-passagedata pid="35" name="Strongmen" tags="" position="864,2868" size="100,100">Each new strongman leader blames the others for creating the migrant crisis.
 
-[[International tensions are heating up.-&gt;Global South uprising + climate wars]] </tw-passagedata><tw-passagedata pid="37" name="Employment as citizenship" tags="" position="624,2870" size="100,100">A lot of the migrants are offered “corporate citizenship” - business visas that mean getting a job with one of the big multinationals is the only way they’re allowed to live in one of the parts of the world that are still easy to live in. Losing your job means exile.
+[[International tensions are heating up.-&gt;Global South uprising + climate wars]] </tw-passagedata><tw-passagedata pid="36" name="Employment as citizenship" tags="" position="624,2870" size="100,100">A lot of the migrants are offered “corporate citizenship” - business visas that mean getting a job with one of the big multinationals is the only way they’re allowed to live in one of the parts of the world that are still easy to live in. Losing your job means exile.
 
-And exile is a problem, because [[large parts of the world are becoming unlivable.-&gt;Orange Zones]]</tw-passagedata><tw-passagedata pid="38" name="Refugee crisis + designer world" tags="" position="799,2683" size="100,100">Perpetual  disasters (floods, fires, rising oceans, droughts…) mean there are now 1 billion climate refugees. 
+And exile is a problem, because [[large parts of the world are becoming unlivable.-&gt;Orange Zones]]</tw-passagedata><tw-passagedata pid="37" name="Refugee crisis + designer world" tags="" position="1159,2704" size="100,100">Perpetual  disasters (floods, fires, rising oceans, droughts…) mean there are now 1 billion climate refugees. 
 
 How should society respond?
 [[They&#39;re coming for your UBI!-&gt;Strongmen]] 
-[[Let&#39;s welcome them into our cities.-&gt;Human Capital]]</tw-passagedata><tw-passagedata pid="39" name="Increasing densification" tags="" position="273,2864" size="100,100">We choose to welcome them, and invest in new public housing in our cities, built with green technologies (including some space-agey stuff like living walls infused with bacteria).
+[[Let&#39;s welcome them into our cities.-&gt;Human Capital]]</tw-passagedata><tw-passagedata pid="38" name="Increasing densification" tags="" position="273,2864" size="100,100">We choose to welcome them, and invest in new public housing in our cities, built with green technologies (including some space-agey stuff like living walls infused with bacteria).
 
 Therefore, cities become denser, more multicultural. This leads to a new reckoning in what we value, and a greater awareness of our responsibilities to each other.
 
@@ -827,30 +869,37 @@ What should we do with all of this new wild space?
 
 [[Re-wild them and restore indigenous communities&#39; rights to them.-&gt;Rewild]] - this is expensive.
 [[Allow the land to remain in the hands of private individuals.-&gt;Orange Zones]]
-Re-wild them and let control rest with the nation state (climate wars: melting glaciers and conflict over natural resource allocation)</tw-passagedata><tw-passagedata pid="40" name="Refugee crisis + slow fade world" tags="" position="467,2593" size="100,100">Tragic disasters like ongoing flooding in Bangladesh mean there are now 500-million new climate refugees.
+Re-wild them and let control rest with the nation state (climate wars: melting glaciers and conflict over natural resource allocation)</tw-passagedata><tw-passagedata pid="39" name="Refugee crisis + slow fade world" tags="" position="467,2593" size="100,100">Tragic disasters like ongoing flooding in Bangladesh mean there are now 500-million new climate refugees.
 
 How should society respond?
 [[There are just too many people. Let&#39;s build refugee camps.-&gt;Permanent refugee camps]] 
 [[Human Capital]]
-[[Every country should have to accept a number of refugees proportional to their GDP.-&gt;Refugee conflict]]</tw-passagedata><tw-passagedata pid="41" name="Permanent refugee camps" tags="" position="436,2757" size="100,100">Only a handful of countries welcome them, and most are corralled into permanent refugee camps in a humanitarian disaster.
+[[Every country should have to accept a number of refugees proportional to their GDP.-&gt;Refugee conflict]]</tw-passagedata><tw-passagedata pid="40" name="Permanent refugee camps" tags="" position="436,2757" size="100,100">Only a handful of countries welcome them, and most are corralled into permanent refugee camps in a humanitarian disaster.
 
-[[Your correspondants from poorer countries report that there&#39;s a lot of anger building.-&gt;Global South uprising + Slow Fade]] </tw-passagedata><tw-passagedata pid="42" name="Global South uprising + climate wars" tags="" position="1004,3068" size="100,100">The climate is still changing quickly, and the worst impacts are happening in poor countries. The leaders of 50 countries in the Global South band together and say, enough. This is our last shot. We have to stop all emissions within the next 5 years, and urgently try to reverse the damage that’s already been done.
+[[Your correspondants from poorer countries report that there&#39;s a lot of anger building.-&gt;Global South uprising + Slow Fade]] </tw-passagedata><tw-passagedata pid="41" name="Global South uprising + climate wars" tags="" position="1004,3068" size="100,100">The climate is still changing quickly, and the worst impacts are happening in poor countries. The leaders of 50 countries in the Global South band together and say, enough. This is our last shot. We have to stop all emissions within the next 5 years, and urgently try to reverse the damage that’s already been done.
 
 What do you think: should the rich wold agree?
 [[I don&#39;t know, maybe let&#39;s talk about it some more.-&gt;Welcome to 2050 (Slow Fade)]] 
 [[Ha! No way. That sounds like a plot to overthrow our power!-&gt;Welcome to 2050 (Climate Wars)]]
 [[What if the Global South made them agree?-&gt;Global South Strike]]
-</tw-passagedata><tw-passagedata pid="43" name="Reform capitalism" tags="" position="124,2035" size="100,100">We decide to totally reform capitalism. We tax the rich and invest in public infrastructure. We see lots of experiments in communal and sustainable urban living. We start reforming capitalism with new rules like employee representation on boards. The gap between rich and poor closes. A lot of carbon capture projects happen on a grassroots level as co-operatives/community-owned projects.
+</tw-passagedata><tw-passagedata pid="42" name="Reform capitalism" tags="" position="173,1934" size="100,100">We tax the rich and invest in public infrastructure and generous grant programmes.
 
-But wait, the rich have #sadfeels about all this! They produce charts proving that all this climate mitigation will decimate the world’s economy! 
+Freed from constant worry about their next paycheque, we start to see a lot of experiments in new forms of communal and sustainable urban living. 
 
-[[Well, maybe we&#39;re measuring the economy wrong, then.-&gt;GHW]]
-Oh shoot, let&#39;s back off!</tw-passagedata><tw-passagedata pid="44" name="Chinese green global infrastructure" tags="" position="990,1916" size="100,100">[[Transitional fracking]] 
-[[That&#39;s a Chinese land grab!]] </tw-passagedata><tw-passagedata pid="45" name="That&#39;s a Chinese land grab!" tags="" position="1025,2207" size="100,100">The E.U. and America claim that the “historical emissions” proposal is nothing but a power grab by China. Global tensions are inflamed further. Everyone walks away from the summit angry and no resolution is passed.
+We start reforming capitalism with new rules like employee representation on boards. The gap between rich and poor closes. 
 
-[[Well, you made it through the decade!-&gt;Welcome to 2040 (Climate Wars)]] </tw-passagedata><tw-passagedata pid="46" name="Rewild" tags="" position="268,3069" size="100,100">We choose to rewild as much of the world as we can. Huge areas of land are now protected natural spaces given back to indigenous communities to steward, or managed by non-profit organisations.
+A lot of carbon capture projects happen on a grassroots level as co-operatives/community-owned projects.
 
-[[Welcome to 2050 (Ecotopia)]] </tw-passagedata><tw-passagedata pid="47" name="Welcome to 2050 (Climate Wars)" tags="" position="983,3275" size="100,100">Some news headlines from January 2050:
+**But wait, the rich have #sadfeels about all this! They produce charts proving that all this equality will decimate the world’s economy!**
+
+[[Well then, maybe we&#39;re measuring the economy wrong.-&gt;GHW]]
+
+[[Oh no! Better undo all of these reforms. Things were fine before, weren&#39;t they?-&gt;Gains reversed]]</tw-passagedata><tw-passagedata pid="43" name="Chinese green global infrastructure" tags="" position="990,1916" size="100,100">[[Transitional fracking]] 
+[[That&#39;s a Chinese land grab!]] </tw-passagedata><tw-passagedata pid="44" name="That&#39;s a Chinese land grab!" tags="" position="932,2183" size="100,100">The E.U. and America claim that the “historical emissions” proposal is nothing but a power grab by China. Global tensions are inflamed further. Everyone walks away from the summit angry and no resolution is passed.
+
+[[Well, you made it through the decade!-&gt;Welcome to 2040 (Climate Wars)]] </tw-passagedata><tw-passagedata pid="45" name="Rewild" tags="" position="268,3069" size="100,100">We choose to rewild as much of the world as we can. Huge areas of land are now protected natural spaces given back to indigenous communities to steward, or managed by non-profit organisations.
+
+[[Welcome to 2050 (Ecotopia)]] </tw-passagedata><tw-passagedata pid="46" name="Welcome to 2050 (Climate Wars)" tags="" position="983,3275" size="100,100">Some news headlines from January 2050:
 
 Advanced countries reap benefits as Brain Drain peaks leaving towns empty in the developing world.
 
@@ -860,9 +909,9 @@ Serengeti-Mara National Park is de-proclaimed as global food insecurity increase
 
 China ready to Re-home Displaced Bengal Tigers from Bangladesh while millions of displaced people wait at their border for entry permits.
 
-[[Let&#39;s see what the 2050s will bring-&gt;Last-ditch geo-engineering]] </tw-passagedata><tw-passagedata pid="48" name="Human Capital" tags="" position="807,2870" size="100,100">Migrants are welcomed as “human capital” and resettled in new, high-tech cities all around the world. We’re spending more money on education and healthcare than ever before. A host of new technologies are developed that help us to make the new cities more resilient against climate shocks.
+[[Let&#39;s see what the 2050s will bring-&gt;Last-ditch geo-engineering]] </tw-passagedata><tw-passagedata pid="47" name="Human Capital" tags="" position="1066,2883" size="100,100">Migrants are welcomed as “human capital” and resettled in new, high-tech cities all around the world. We’re spending more money on education and healthcare than ever before. A host of new technologies are developed that help us to make the new cities more resilient against climate shocks.
 
-[[You made it to 2050.-&gt;Welcome to 2050 (Designer Planet)]] </tw-passagedata><tw-passagedata pid="49" name="Welcome to 2050 (Designer Planet)" tags="" position="797,3277" size="100,100">Some news headlines from January 2050:
+[[You made it to 2050.-&gt;Welcome to 2050 (Designer Planet)]] </tw-passagedata><tw-passagedata pid="48" name="Welcome to 2050 (Designer Planet)" tags="" position="797,3277" size="100,100">Some news headlines from January 2050:
 
 Natural sex ratio (more girls than boys) restored in South Asia after a century when sex selective abortion had distrorted this number
 
@@ -894,12 +943,12 @@ Bat meets pig, novel virus exchanged but no big deal because it is detected befo
 
 All vertebrate wildlife population movements tracked by satellite to take the “pulse of the planet” (actually maybe this is also more of an ecosocialist utopia thing).
 
-[[Let&#39;s see what the 2060s will bring.-&gt;Well-researched geo-engineering]] </tw-passagedata><tw-passagedata pid="50" name="Orange Zones" tags="" position="633,3018" size="100,100">Large swathes of the world are declared “Orange Zones”, places where food no longer grows, temperatures are uncomfortable for most people, and there are frequent disasters. What remains of the governments of these countries are flat broke.
+[[Let&#39;s see what the 2060s will bring.-&gt;Well-researched geo-engineering]] </tw-passagedata><tw-passagedata pid="49" name="Orange Zones" tags="" position="633,3018" size="100,100">Large swathes of the world are declared “Orange Zones”, places where food no longer grows, temperatures are uncomfortable for most people, and there are frequent disasters. What remains of the governments of these countries are flat broke.
 
 What should we do with the Orange Zones?
 [[Let multinationals buy them.-&gt;Corporate Orange Zones]]
 [[Fight over them.-&gt;War over Orange Zones]]
-[[Agree to leave them be.-&gt;Experimental Orange Zones]]</tw-passagedata><tw-passagedata pid="51" name="Welcome to 2050 (Billionaire Saviours)" tags="" position="633,3296" size="100,100">Some news headlines from January 2050:
+[[Agree to leave them be.-&gt;Experimental Orange Zones]]</tw-passagedata><tw-passagedata pid="50" name="Welcome to 2050 (Billionaire Saviours)" tags="" position="633,3296" size="100,100">Some news headlines from January 2050:
 
 “Last Chance to See It - Front Row Seats to the End of the World”  Disaster tourism - ghost tours, but with soon-to-be ghosts / sunken cities island states. Manufacture experiences of cold. Visit the winter museum. The “Frozen” theme park …
 
@@ -915,7 +964,7 @@ In-flight magazine - buy noise-making headphones for birdsong soundscapes, “No
 
 Geoengineering schemes driven by billionaires: refreeze the poles and the high-mountain glaciers; brighten the clouds and induce fogs over Great Barrier Reef; genetically engineer plants for carbon sequestration, temp resilience, and brighter leaves 
 
-[[Let&#39;s see what the 2060s will bring.-&gt;Last-ditch geo-engineering]] </tw-passagedata><tw-passagedata pid="52" name="Welcome to 2050 (Ecotopia)" tags="" position="274,3295" size="100,100">Want to read our top story from January 2050?
+[[Let&#39;s see what the 2060s will bring.-&gt;Last-ditch geo-engineering]] </tw-passagedata><tw-passagedata pid="51" name="Welcome to 2050 (Ecotopia)" tags="" position="274,3295" size="100,100">Want to read our top story from January 2050?
 [[Green Mall Review]]
 
 Some news headlines from January 2050:
@@ -932,14 +981,14 @@ We’ve reached peak temperature increase at 1.7 degrees and the global temperat
 
 Beavers return to Manhattan as the city fragments into sustainable communities.
 
-[[Let&#39;s see what the 2050s will bring-&gt;Who looks after the wild?]]</tw-passagedata><tw-passagedata pid="53" name="Global South uprising + Slow Fade" tags="" position="450,2930" size="100,100">The world is falling far short of the (pitiful) targets agreed to, and the worst impacts are happening in poor countries. The leaders of 50 countries in the Global South band together and say, enough. This is our last shot. We have to stop all emissions within the next 15 years, and urgently try to reverse the damage that’s already been done.
+[[Let&#39;s see what the 2050s will bring-&gt;Who looks after the wild?]]</tw-passagedata><tw-passagedata pid="52" name="Global South uprising + Slow Fade" tags="" position="450,2930" size="100,100">The world is falling far short of the (pitiful) targets agreed to, and the worst impacts are happening in poor countries. The leaders of 50 countries in the Global South band together and say, enough. This is our last shot. We have to stop all emissions within the next 15 years, and urgently try to reverse the damage that’s already been done.
 
 Will the rich world agree? (Most of your readers are from rich countries. What&#39;s your editorial angle?)
 [[Accept responsibility-&gt;Welcome to 2050 (Designer Planet)]] 
 [[Every country for themself-&gt;Patchwork of solutions]] (Sure, but each country needs to find their own way to deal with this.)
 [[Take up arms-&gt;Welcome to 2050 (Climate Wars)]]
 [[Maybe technology can save us?-&gt;Lucky procrastinator]]
-</tw-passagedata><tw-passagedata pid="54" name="Welcome to 2050 (Slow Fade)" tags="" position="432,3346" size="100,100">Some news headlines from January 2050:
+</tw-passagedata><tw-passagedata pid="53" name="Welcome to 2050 (Slow Fade)" tags="" position="432,3346" size="100,100">Some news headlines from January 2050:
 
 SpaceX Offers First Long-Term Leases in Space Colony.
 
@@ -953,12 +1002,12 @@ Concurrent influenza-paramyxovirus “global syndemic” kills millions with ast
 
 Synthetic Coffee, Chocolate Now Cheaper Than Natural Counterparts.
 
-[[Let&#39;s see what the 2050s will bring-&gt;Last-ditch geo-engineering]] </tw-passagedata><tw-passagedata pid="55" name="Who looks after the wild?" tags="" position="280,3458" size="100,100">There’s all this new wild space in different parts of the world. Species are recovering. It’s beautiful and valuable. People would love to get their hands on it. We could use this for tourism! Or let rich people live there! Or exploit newly discovered resources there! Corporations also want to fund (and manage) them because they’re carbon sinks, to offset their activity elsewhere.
+[[Let&#39;s see what the 2050s will bring-&gt;Last-ditch geo-engineering]] </tw-passagedata><tw-passagedata pid="54" name="Who looks after the wild?" tags="" position="280,3458" size="100,100">There’s all this new wild space in different parts of the world. Species are recovering. It’s beautiful and valuable. People would love to get their hands on it. We could use this for tourism! Or let rich people live there! Or exploit newly discovered resources there! Corporations also want to fund (and manage) them because they’re carbon sinks, to offset their activity elsewhere.
 
 What should we do with all this lovely wild space?
 [[Fund indigenous communities and small co-operatives to keep running them-&gt;Local communities]]
 [[Corporate forests]]
-[[Technocrats-&gt;Global climate council]]</tw-passagedata><tw-passagedata pid="56" name="Local communities" tags="" position="258,3616" size="100,100">The world launches a “Global Commons Fund”: a taxation pool that taxes those who produce pollution or consume luxury goods, and uses this money to fund indigenous communities and co-operatives around the world who act as stewards of the environment, which act as carbon sinks.
+[[Technocrats-&gt;Global climate council]]</tw-passagedata><tw-passagedata pid="55" name="Local communities" tags="" position="258,3616" size="100,100">The world launches a “Global Commons Fund”: a taxation pool that taxes those who produce pollution or consume luxury goods, and uses this money to fund indigenous communities and co-operatives around the world who act as stewards of the environment, which act as carbon sinks.
 
 (This could also be a global de-carbonisation fund, generated by climate change reparations paid by fines charged to carbon criminals (Saudi-aramco, BP, Shell etc.), reinvests in local and indigenous communities.)
 
@@ -966,8 +1015,8 @@ Global South countries band together and argue that they shouldn’t have to con
 
 Will rich countries agree to this?
 [[That seems fair.-&gt;Global Commons Fund]]
-Absolutely not!</tw-passagedata><tw-passagedata pid="57" name="Corporate forests" tags="" position="428,3601" size="100,100">[[And they&#39;re going to try climate hacks-&gt;Billionaire geo-engineering]] 
-[[BUT overseen by a global climate council-&gt;Global climate council]] </tw-passagedata><tw-passagedata pid="58" name="Global climate council" tags="" position="816,3784" size="100,100">In a historic meeting, we establish a new global climate council that oversees the project, and begin to deploy it.
+Absolutely not!</tw-passagedata><tw-passagedata pid="56" name="Corporate forests" tags="" position="428,3601" size="100,100">[[And they&#39;re going to try climate hacks-&gt;Billionaire geo-engineering]] 
+[[BUT overseen by a global climate council-&gt;Global climate council]] </tw-passagedata><tw-passagedata pid="57" name="Global climate council" tags="" position="816,3784" size="100,100">In a historic meeting, we establish a new global climate council that oversees the project, and begin to deploy it.
 
 The council are warned that if the space mirror project ever fails, there might be terrible consequences. They can also invest in a backup plan, building machines that suck carbon out of the atmosphere, but it will be expensive. The cost will mean a 5% reduction of everyone&#39;s UBI, which will be unpopular! ((translates into: most people can afford to go on one international holiday a year now; if you invest in carbon capture, it will only be an international holiday every second year))
 
@@ -980,7 +1029,7 @@ Don&#39;t worry. I&#39;m sure this won&#39;t be important later.
 
 ((Set variable))
 
-[[Welcome to 2060 (Designer Planet)]]</tw-passagedata><tw-passagedata pid="59" name="Welcome to 2060 (Ecotopia)" tags="" position="273,3944" size="100,100">Some news headlines from January 2060:
+[[Welcome to 2060 (Designer Planet)]]</tw-passagedata><tw-passagedata pid="58" name="Welcome to 2060 (Ecotopia)" tags="" position="273,3944" size="100,100">Some news headlines from January 2060:
 
 Indigenous Peoples and Local Communities (IPLCs) take their seat at the UN
 
@@ -998,32 +1047,32 @@ Redistribution of golf courses (owned by said billionaires) brings much much nee
  
  Outbreak of locusts not seen since 2020 swarms have returned as conditions cool: we can now feast on amacimbi!
 
-[[Let&#39;s see what the 2070s will bring-&gt;1.5 degree shocks]] </tw-passagedata><tw-passagedata pid="60" name="Last-ditch geo-engineering" tags="" position="695,3452" size="100,100">The effects of climate change are getting more and more severe. Scientists say it’s time to deploy some form of ambitious geo-engineering to buy ourselves time to get the climate back under control. But there’s still a lot of uncertainty about whether it will work, or how it would be managed.
+[[Let&#39;s see what the 2070s will bring-&gt;1.5 degree shocks]] </tw-passagedata><tw-passagedata pid="59" name="Last-ditch geo-engineering" tags="" position="695,3452" size="100,100">The effects of climate change are getting more and more severe. Scientists say it’s time to deploy some form of ambitious geo-engineering to buy ourselves time to get the climate back under control. But there’s still a lot of uncertainty about whether it will work, or how it would be managed.
 
 Should we try a last-ditch geo-engineering solution?
 (set: $stalling to 0)
 (link-repeat: &quot;Let&#39;s keep talking about it and try to get international consensus.&quot;)[(if: $stalling &gt;= 2)[(goto:&quot;Stalling&quot;)](else:)[(set:$stalling to it + 1)]]
 
-(link: &quot;Let&#39;s give it a go&quot;)[(set: _geoengineering to (random: 1,6))(if: _geoengineering &lt;= 1)[(goto:&quot;Geo-engineering FAIL&quot;)](elseif: _geoengineering &lt;= 3)[(goto:&quot;Billionaire geo-engineering&quot;)](elseif: _geoengineering &lt;= 4)[(goto:&quot;Unilateral geo-engineering&quot;)](else:)[(goto:&quot;Surprising success geo-engineering&quot;)]]</tw-passagedata><tw-passagedata pid="61" name="Well-researched geo-engineering" tags="" position="974,3487" size="100,100">All this investment in education starts paying off. We’ve developed a technology that we think will allow us to engineer the climate through a fleet of space-mirrors that controls how sunlight is reflected from the planet. It’s risky and untested tech, and it will require global coordination. 
+(link: &quot;Let&#39;s give it a go&quot;)[(set: _geoengineering to (random: 1,6))(if: _geoengineering &lt;= 1)[(goto:&quot;Geo-engineering FAIL&quot;)](elseif: _geoengineering &lt;= 3)[(goto:&quot;Billionaire geo-engineering&quot;)](elseif: _geoengineering &lt;= 4)[(goto:&quot;Unilateral geo-engineering&quot;)](else:)[(goto:&quot;Surprising success geo-engineering&quot;)]]</tw-passagedata><tw-passagedata pid="60" name="Well-researched geo-engineering" tags="" position="974,3487" size="100,100">All this investment in education starts paying off. We’ve developed a technology that we think will allow us to engineer the climate through a fleet of space-mirrors that controls how sunlight is reflected from the planet. It’s risky and untested tech, and it will require global coordination. 
 
 Should we go for it?
 (set: $stalling to 0)
 (link-repeat: &quot;Let&#39;s do a little more research first.&quot;)[(if: $stalling &gt;= 2)[(goto:&quot;Stalling&quot;)](else:)[(set:$stalling to it + 1)]]
 
-(link: &quot;Let&#39;s give it a go&quot;)[(set: _geoengineering to (random: 1,10))(if: _geoengineering &lt;= 1)[(goto:&quot;Geo-engineering FAIL&quot;)](else:)[(goto:&quot;Global climate council&quot;)]]</tw-passagedata><tw-passagedata pid="62" name="Billionaire geo-engineering" tags="" position="651,3747" size="100,100">We decide to give this a try, and decide this would best be managed by private businesses. Our billionaire playboy overlords start deploying huge, flashy technology projects (all named after themselves) to re-engineer the climate. 
+(link: &quot;Let&#39;s give it a go&quot;)[(set: _geoengineering to (random: 1,10))(if: _geoengineering &lt;= 1)[(goto:&quot;Geo-engineering FAIL&quot;)](else:)[(goto:&quot;Global climate council&quot;)]]</tw-passagedata><tw-passagedata pid="61" name="Billionaire geo-engineering" tags="" position="651,3747" size="100,100">We decide to give this a try, and decide this would best be managed by private businesses. Our billionaire playboy overlords start deploying huge, flashy technology projects (all named after themselves) to re-engineer the climate. 
 
 We also send up the first manned Mars missions, so we’ve got that as a backup.
 
-[[Woohoo! You made it to 2060.-&gt;Welcome to 2060 (Billionaire Saviours)]]</tw-passagedata><tw-passagedata pid="63" name="Unilateral geo-engineering" tags="" position="1000,3756" size="100,100">A global agreement seems impossible. Years of drought and crop failures lead Barron Trump, America’s newly appointed Leader-for-Life, to erect a huge vertical pipe spraying sulphur dioxide into the upper atmosphere (yes, there are a lot of dick jokes). 
+[[Woohoo! You made it to 2060.-&gt;Welcome to 2060 (Billionaire Saviours)]]</tw-passagedata><tw-passagedata pid="62" name="Unilateral geo-engineering" tags="" position="1000,3756" size="100,100">A global agreement seems impossible. Years of drought and crop failures lead Barron Trump, America’s newly appointed Leader-for-Life, to erect a huge vertical pipe spraying sulphur dioxide into the upper atmosphere (yes, there are a lot of dick jokes). 
 
 This cools America but causes drought across India and Africa.
 
-[[What?! It&#39;s 2060 ALREADY??-&gt;Welcome to 2060 (Climate Wars)]]</tw-passagedata><tw-passagedata pid="64" name="Geo-engineering FAIL" tags="" position="1237,3775" size="100,100">WHOOPS we really fucked up and we&#39;re all dead now.
-Sorry.</tw-passagedata><tw-passagedata pid="65" name="Stalling" tags="" position="456,3755" size="100,100">We choose to do more research, and keep debating, and talking, and talking, and stalling.
+[[What?! It&#39;s 2060 ALREADY??-&gt;Welcome to 2060 (Climate Wars)]]</tw-passagedata><tw-passagedata pid="63" name="Geo-engineering FAIL" tags="" position="1237,3775" size="100,100">WHOOPS we really fucked up and we&#39;re all dead now.
+Sorry.</tw-passagedata><tw-passagedata pid="64" name="Stalling" tags="" position="456,3755" size="100,100">We choose to do more research, and keep debating, and talking, and talking, and stalling.
 
 By the end of the decade, we haven’t done anything yet.
 
-[[What?! It&#39;s 2060 ALREADY??-&gt;Welcome to 2060 (Slow Fade)]]</tw-passagedata><tw-passagedata pid="66" name="Welcome to 2060 (Slow Fade)" tags="" position="439,3949" size="100,100">Some news headlines from January 2060:
+[[What?! It&#39;s 2060 ALREADY??-&gt;Welcome to 2060 (Slow Fade)]]</tw-passagedata><tw-passagedata pid="65" name="Welcome to 2060 (Slow Fade)" tags="" position="439,3949" size="100,100">Some news headlines from January 2060:
 
 Chile Holds Historic Reconciliation Summit with Climate Guerrillas.
 
@@ -1035,7 +1084,7 @@ Trans-Arctic Shipping Surpasses Trans-Pacific Shipping for First Time.
  
  Only ‘20s Kids Will Remember Arctic Sea Ice.
 
-[[Cool, let&#39;s see what the 2060s will bring...-&gt;2.5 degree shocks]] </tw-passagedata><tw-passagedata pid="67" name="Welcome to 2060 (Billionaire Saviours)" tags="" position="628,3949" size="100,100">Some news headlines from January 2060:
+[[Cool, let&#39;s see what the 2060s will bring...-&gt;2.5 degree shocks]] </tw-passagedata><tw-passagedata pid="66" name="Welcome to 2060 (Billionaire Saviours)" tags="" position="628,3949" size="100,100">Some news headlines from January 2060:
 
 Warring/competing geoengineering schemes. How interact?
 
@@ -1058,7 +1107,7 @@ Bangladeshi Elevation Project Falls Through - quite literally
 
 Chinese Economy Rebounds as Geoengineering Silver Bullet Slows Rapid Warming
 
-[[Cool, let&#39;s see what the 2060s will bring...-&gt;Mars mission?]]</tw-passagedata><tw-passagedata pid="68" name="Welcome to 2060 (Designer Planet)" tags="" position="819,3944" size="100,100">Some news headlines from January 2060:
+[[Cool, let&#39;s see what the 2060s will bring...-&gt;Mars mission?]]</tw-passagedata><tw-passagedata pid="67" name="Welcome to 2060 (Designer Planet)" tags="" position="819,3944" size="100,100">Some news headlines from January 2060:
 
 People upset that they can’t get designer weather: movement to create specific weather zones
 
@@ -1073,7 +1122,7 @@ Weaker  monsoons in South Asia that drive some regional water shortages
 Last hydropower plant closed in Indian Himalayas, Central Asia, Andes,  decommissioned after successive years of low flows and low electricity generation due to melting of glaciers
 
 [[Let&#39;s see what the 2070s will bring.-&gt;Hackers attack space fleet]]
-</tw-passagedata><tw-passagedata pid="69" name="Welcome to 2060 (Climate Wars)" tags="" position="1004,3954" size="100,100">Some news headlines from January 2060:
+</tw-passagedata><tw-passagedata pid="68" name="Welcome to 2060 (Climate Wars)" tags="" position="1004,3954" size="100,100">Some news headlines from January 2060:
 
 Eco-terrorist cell from Bolivia kidnaps head of the geoengineering assessment project. President Barron Trump: “We don’t negotiate with terrorists and we will make the World Great Again.&quot;
 
@@ -1085,15 +1134,15 @@ China faces food rationing as vital supply chains from India and Africa  dry up 
  
 Sahara begins to move south as the US implements its mega geoengineering project.
 
-[[Let&#39;s see what the 2070s will bring-&gt;The wars begin]]</tw-passagedata><tw-passagedata pid="70" name="1.5 degree shocks" tags="" position="279,4121" size="100,100">Even though the world has reduced its emissions dramatically, we do have a very bad 5 years where the world experiences a number of climate shocks at once.
+[[Let&#39;s see what the 2070s will bring-&gt;The wars begin]]</tw-passagedata><tw-passagedata pid="69" name="1.5 degree shocks" tags="" position="279,4121" size="100,100">Even though the world has reduced its emissions dramatically, we do have a very bad 5 years where the world experiences a number of climate shocks at once.
 
 (Nope, we need carbon capture a decade earlier)
 
 [[Eco-mitigation]]
-[[High-tech 1.5 mitigation]]</tw-passagedata><tw-passagedata pid="71" name="Eco-mitigation" tags="" position="164,4331" size="100,100">Mt. Mount Agung, a volcano in Bali, erupts in 2060 and fortuitously contributes to accelerate global cooling by 0.2 degrees C for the following two years. The natural effect of this volcano allows avoidance of hi-tech mitigation approaches.
+[[High-tech 1.5 mitigation]]</tw-passagedata><tw-passagedata pid="70" name="Eco-mitigation" tags="" position="164,4331" size="100,100">Mt. Mount Agung, a volcano in Bali, erupts in 2060 and fortuitously contributes to accelerate global cooling by 0.2 degrees C for the following two years. The natural effect of this volcano allows avoidance of hi-tech mitigation approaches.
 
 [[Welcome to 2070 (Ecotopia)]]
-</tw-passagedata><tw-passagedata pid="72" name="High-tech 1.5 mitigation" tags="" position="333,4280" size="100,100">New, resilient high-tech cities are built that rely on complex smart AI systems.
+</tw-passagedata><tw-passagedata pid="71" name="High-tech 1.5 mitigation" tags="" position="333,4280" size="100,100">New, resilient high-tech cities are built that rely on complex smart AI systems.
 
 We discover some unintended consequences of these smart AI systems and agree that they needs to be better managed.
 
@@ -1102,15 +1151,15 @@ Who should manage the AIs that manage our cities?
 [[Central world government]] 
 [[Keep it decentralised]]
 
-[[Over-cooling]]</tw-passagedata><tw-passagedata pid="73" name="2.5 degree shocks" tags="" position="482,4118" size="100,100">We start experiencing even more climate shocks. They’re coming fast now. There’s a terrible global economic recession.
+[[Over-cooling]]</tw-passagedata><tw-passagedata pid="72" name="2.5 degree shocks" tags="" position="482,4118" size="100,100">We start experiencing even more climate shocks. They’re coming fast now. There’s a terrible global economic recession.
 
 Every country is in crisis mode focusing on their own problems, [[far too busy to think about world events.-&gt;Late-stage geo-engineering]]
-</tw-passagedata><tw-passagedata pid="74" name="The wars begin" tags="" position="1004,4104" size="100,100">America’s rogue geo-engineering is the last straw. This sparks a decade-long world war. There are geo-engineering and counter geo-engineering attacks on both sides. There are vicious proxy wars all around the world. After nine years, there’s still no clear winner. The leaders of both sides agree to a clandestine meeting.
+</tw-passagedata><tw-passagedata pid="73" name="The wars begin" tags="" position="1004,4104" size="100,100">America’s rogue geo-engineering is the last straw. This sparks a decade-long world war. There are geo-engineering and counter geo-engineering attacks on both sides. There are vicious proxy wars all around the world. After nine years, there’s still no clear winner. The leaders of both sides agree to a clandestine meeting.
 
 What do you think, editor? Should they agree to a truce?
 
 [[Never surrender!-&gt;Engineered crop blight]]
-[[Yes, heck, this has gone on long enough.-&gt;Armstice]]</tw-passagedata><tw-passagedata pid="75" name="Engineered crop blight" tags="" position="1065,4348" size="100,100">We will never surrender! The war goes on. 
+[[Yes, heck, this has gone on long enough.-&gt;Armstice]]</tw-passagedata><tw-passagedata pid="74" name="Engineered crop blight" tags="" position="1065,4348" size="100,100">We will never surrender! The war goes on. 
 
 Six months later, an engineered blight wipes out the world’s maize crops.
 
@@ -1118,7 +1167,7 @@ Farmers scramble to produce alternative crops, but the whole world&#39;s food su
 
 That year, millions of people die, mostly across the Americas.
 
-[[Welcome to 2070 (Climate Wars)]] </tw-passagedata><tw-passagedata pid="76" name="Armstice" tags="" position="918,4274" size="100,100">Peace is declared.
+[[Welcome to 2070 (Climate Wars)]] </tw-passagedata><tw-passagedata pid="75" name="Armstice" tags="" position="918,4274" size="100,100">Peace is declared.
 
 After a decade of fighting, society is exhausted. We&#39;re ready to do whatever we need to do to ensure that war never breaks out again.
 
@@ -1126,7 +1175,7 @@ We strengthen our commitments to the United Nations. Countries that left it in a
 
 Society has invested billions into their militaries. We decide to retrain and repurpose them for huge new projects to restore the environment and act as an international disaster response team.
 
-[[Central world government]] </tw-passagedata><tw-passagedata pid="77" name="Welcome to 2070 (Climate Wars)" tags="" position="1056,4599" size="100,100">Some news headlines from January 2070:
+[[Central world government]] </tw-passagedata><tw-passagedata pid="76" name="Welcome to 2070 (Climate Wars)" tags="" position="1056,4599" size="100,100">Some news headlines from January 2070:
 
 California secedes from the USA as geoengineering causes winter rains to fail. Washington and Oregon join them to form a new country of Cascadia they imagine as an Eco-Utopia.
 
@@ -1140,17 +1189,17 @@ Widespread wildfires destroy fir plantations in Greenland. Two-decade worth of s
  
 Russia Seeks Huge damages from EU as Sturgeon Catch Dwindles in the Caspian after Rogue Seeding Experiment 
 
-[[Onwards into the 2080s...-&gt;Post-war devastation]]</tw-passagedata><tw-passagedata pid="78" name="Late-stage geo-engineering" tags="" position="501,4248" size="100,100">There’s another discussion about geo-engineering. A rich country just wants to try doing something unilaterally, but they’re worried that this will inflame global tensions.
+[[Onwards into the 2080s...-&gt;Post-war devastation]]</tw-passagedata><tw-passagedata pid="77" name="Late-stage geo-engineering" tags="" position="501,4248" size="100,100">There’s another discussion about geo-engineering. A rich country just wants to try doing something unilaterally, but they’re worried that this will inflame global tensions.
 
 What&#39;s your editorial angle on this?
 
 [[Maybe it&#39;s too late to try to get consensus. Let this one country go rogue and try geo-engineering.-&gt;Geo-engineering FAIL]]
-[[No, we can only do this with the buy-in of everyone. Let&#39;s call another global summit.-&gt;3 degree shocks]]</tw-passagedata><tw-passagedata pid="79" name="3 degree shocks" tags="" position="463,4383" size="100,100">We hold another global geo-engineering summit. More leaders are willing in theory, but there&#39;s still some debate about how exactly all this would be managed. 
+[[No, we can only do this with the buy-in of everyone. Let&#39;s call another global summit.-&gt;3 degree shocks]]</tw-passagedata><tw-passagedata pid="78" name="3 degree shocks" tags="" position="463,4383" size="100,100">We hold another global geo-engineering summit. More leaders are willing in theory, but there&#39;s still some debate about how exactly all this would be managed. 
 
 [[Hang on, we&#39;re getting emergency news out of the U.S. about a new virus...-&gt;Zoonotic pandemic]]
 
 (Solar geoengineering is cheap enough that this seems implausible. A more plausible explanation for the project being shelved is the concern about conflict and countergeoengineering.)
-</tw-passagedata><tw-passagedata pid="80" name="Welcome to 2070 (Slow Fade)" tags="" position="411,4602" size="100,100">Some news headlines from January 2070:
+</tw-passagedata><tw-passagedata pid="79" name="Welcome to 2070 (Slow Fade)" tags="" position="411,4602" size="100,100">Some news headlines from January 2070:
 
 Fears of Conflict, Counter-Geoengineering Deter China from Deploying Solar Geoengineering
 
@@ -1158,7 +1207,7 @@ Booming Mega-Cities Prompt African Continental Free Trade Zone to Negotiate Trad
 
 Amazon Now Completely Savanna
 
-[[Onwards into the 2080s!-&gt;Desparation]]</tw-passagedata><tw-passagedata pid="81" name="Welcome to 2070 (Ecotopia)" tags="" position="202,4607" size="100,100">Want to read our top story from January 2070?
+[[Onwards into the 2080s!-&gt;Desparation]]</tw-passagedata><tw-passagedata pid="80" name="Welcome to 2070 (Ecotopia)" tags="" position="202,4607" size="100,100">Want to read our top story from January 2070?
 [[Obituary for Capitalism]] 
 
 Some news headlines from January 2070:
@@ -1172,17 +1221,17 @@ We almost lost Lake Chad by 2040, but thanks to regreening and water management 
  
 Monsoon season is back: celebrations across the sub-continent
 
-[[Onwards into the 2080s!-&gt;Birth rates plunge]]</tw-passagedata><tw-passagedata pid="82" name="Central world government" tags="" position="812,4444" size="100,100">The global climate council argues that they need stronger enforcement powers to protect the world, and effectively become the world’s (authoritarian) central government. 
+[[Onwards into the 2080s!-&gt;Birth rates plunge]]</tw-passagedata><tw-passagedata pid="81" name="Central world government" tags="" position="812,4444" size="100,100">The global climate council argues that they need stronger enforcement powers to protect the world, and effectively become the world’s (authoritarian) central government. 
 
 The leaders of these rogue states are disappeared and the global council takes control.
 
-[[Onwards into the 2080s!-&gt;Welcome to 2070 (Designer Planet)]]</tw-passagedata><tw-passagedata pid="83" name="Hackers attack space fleet" tags="" position="814,4088" size="100,100">The space fleet becomes the target of attack by rogue states who try to hack it to benefit their own microclimates. 
+[[Onwards into the 2080s!-&gt;Welcome to 2070 (Designer Planet)]]</tw-passagedata><tw-passagedata pid="82" name="Hackers attack space fleet" tags="" position="814,4088" size="100,100">The space fleet becomes the target of attack by rogue states who try to hack it to benefit their own microclimates. 
 
 How should we deal with these rogue actors?
 
 [[Give the global climate council an army.-&gt;Central world government]] 
 
-[[Tell them they are being very naughty and politely ask them to stop messing with the space mirrors.-&gt;Termination shock]]</tw-passagedata><tw-passagedata pid="84" name="Termination shock" tags="" position="715,4258" size="100,100">[[3 degree shocks]] </tw-passagedata><tw-passagedata pid="85" name="Keep it decentralised" tags="" position="342,4452" size="100,100">We choose to create devolved, democratic citizen councils in each city that oversee the AI projects.
+[[Tell them they are being very naughty and politely ask them to stop messing with the space mirrors.-&gt;Termination shock]]</tw-passagedata><tw-passagedata pid="83" name="Termination shock" tags="" position="715,4258" size="100,100">[[3 degree shocks]] </tw-passagedata><tw-passagedata pid="84" name="Keep it decentralised" tags="" position="342,4452" size="100,100">We choose to create devolved, democratic citizen councils in each city that oversee the AI projects.
 
 In fact, while we&#39;re at it, let&#39;s agree to a global disarmament treaty where all militaries are disbanded and repurposed into environmental and climate disaster response units!
 
@@ -1190,7 +1239,7 @@ In fact, while we&#39;re at it, let&#39;s agree to a global disarmament treaty w
 ((No militaries!))
 ((That&#39;s going to set a flag, and down the line the Martian billionaires will return.))
 
-[[You made it to 2070!-&gt;Welcome to 2070 (Ecotopia)]] </tw-passagedata><tw-passagedata pid="86" name="Welcome to 2070 (Designer Planet)" tags="" position="810,4608" size="100,100">Some news headlines from January 2070:
+[[You made it to 2070!-&gt;Welcome to 2070 (Ecotopia)]] </tw-passagedata><tw-passagedata pid="85" name="Welcome to 2070 (Designer Planet)" tags="" position="810,4608" size="100,100">Some news headlines from January 2070:
 
 Increasing Talk about restarting outdoors Olympic Winter Games (except there aren&#39;t countries any more, so people will represent something else)
 
@@ -1206,13 +1255,13 @@ India sees their first season without monsoon due to disruption of the hydrologi
 
 The trees are coming! Increased woody vegetation expansion across Africa from combination of high CO2 and lower temperatures, turning grasslands into savannas and savannas into forests. No more wide open African grasslands now more difficult to spot the animals living among the trees.
 
-[[Onwards into the 2080s!-&gt;Miscalculation]]</tw-passagedata><tw-passagedata pid="87" name="Mars mission?" tags="" position="641,4115" size="100,100">Scientists say we’ve developed the technology to begin colonizing Mars on a larger scale, but it’s going to cost an eye-meltingly large amount of money. So much that we’ll have to de-fund most of the geo-engineering projects.
+[[Onwards into the 2080s!-&gt;Miscalculation]]</tw-passagedata><tw-passagedata pid="86" name="Mars mission?" tags="" position="641,4115" size="100,100">Scientists say we’ve developed the technology to begin colonizing Mars on a larger scale, but it’s going to cost an eye-meltingly large amount of money. So much that we’ll have to de-fund most of the geo-engineering projects.
 
 Should we forget about earth and put all our hopes in Mars?
 
 [[Screw earth, let&#39;s all go to Mars.-&gt;Termination shock]]
 [[Let&#39;s fix the planet we&#39;re already on.-&gt;Earth terraforming]] 
-</tw-passagedata><tw-passagedata pid="88" name="Welcome to 2070 (Billionaire Saviours)" tags="" position="653,4571" size="100,100">Some news headlines from January 2070:
+</tw-passagedata><tw-passagedata pid="87" name="Welcome to 2070 (Billionaire Saviours)" tags="" position="653,4571" size="100,100">Some news headlines from January 2070:
 &quot;So You Want to Go to Mars: getting there when you don’t have the Chit” -- various ways to get to Mars for the financially challenged (musicians; De Medici-style patronage of the arts, special skills; research subjects,guinea pigs, surrogates)
 
 “Heroes of Science - the brave people who are fighting for their lives so you can have a vaccine, or an arm”   Human petri dishes - poor people growing organs to be harvested for rich people; poor people growing vaccines. 
@@ -1221,15 +1270,15 @@ Should we forget about earth and put all our hopes in Mars?
  
 “The Way Things Were: Norwegian Art Installation has  Holograms of whales returning to the ocean.” 
 
-[[Onwards into the 2080s!-&gt;Climate hacks in conflict]]</tw-passagedata><tw-passagedata pid="89" name="Birth rates plunge" tags="" position="200,4794" size="100,100">As women become better educated, birth rates plunge all around the world. Economists panic at the looming “old age” bulge.
+[[Onwards into the 2080s!-&gt;Climate hacks in conflict]]</tw-passagedata><tw-passagedata pid="88" name="Birth rates plunge" tags="" position="200,4794" size="100,100">As women become better educated, birth rates plunge all around the world. Economists panic at the looming “old age” bulge.
 
 How should we respond to this economic issue?
 [[Invest in social care]]
-[[Let&#39;s ban birth control.-&gt;Goodbye reproductive rights]]</tw-passagedata><tw-passagedata pid="90" name="Invest in social care" tags="" position="103,4997" size="100,100">We respond by investing even more in healthcare and social support systems to ensure that this generation will be able to keep working (and live better lives) for longer.
+[[Let&#39;s ban birth control.-&gt;Goodbye reproductive rights]]</tw-passagedata><tw-passagedata pid="89" name="Invest in social care" tags="" position="103,4997" size="100,100">We respond by investing even more in healthcare and social support systems to ensure that this generation will be able to keep working (and live better lives) for longer.
 
-[[You made it to 2080!-&gt;Welcome to 2080 (Ecotopia)]]</tw-passagedata><tw-passagedata pid="91" name="Goodbye reproductive rights" tags="" position="272,4997" size="100,100">We ALMOST go Handmaid&#39;s Tale, but women are too strong now, and they revolt.
+[[You made it to 2080!-&gt;Welcome to 2080 (Ecotopia)]]</tw-passagedata><tw-passagedata pid="90" name="Goodbye reproductive rights" tags="" position="272,4997" size="100,100">We ALMOST go Handmaid&#39;s Tale, but women are too strong now, and they revolt.
 
-[[You made it to 2080!-&gt;Welcome to 2080 (Ecotopia)]] </tw-passagedata><tw-passagedata pid="92" name="Welcome to 2080 (Ecotopia)" tags="" position="215,5206" size="100,100">Want to read our top story from January 2080?
+[[You made it to 2080!-&gt;Welcome to 2080 (Ecotopia)]] </tw-passagedata><tw-passagedata pid="91" name="Welcome to 2080 (Ecotopia)" tags="" position="215,5206" size="100,100">Want to read our top story from January 2080?
 [[GIPSS]]
 
 Some news headlines from January 2080:
@@ -1243,12 +1292,12 @@ Glaciers have been spotted on Mount Kilimanjaro!
 
 REAL SNOW! Historic ski resort in Switzerland opens with real snow for the first time in decades
 
-[[Just one more decade to go-&gt;The end of Nation States]]</tw-passagedata><tw-passagedata pid="93" name="Desparation" tags="" position="468,4776" size="100,100">Feeling increasingly hopeless, rogue groups of climate rebels get together and start discussing cheap ways to hack the climate. There are risks.
+[[Just one more decade to go-&gt;The end of Nation States]]</tw-passagedata><tw-passagedata pid="92" name="Desparation" tags="" position="468,4776" size="100,100">Feeling increasingly hopeless, rogue groups of climate rebels get together and start discussing cheap ways to hack the climate. There are risks.
 
 Should they do it?
 
 [[Why not. We have to try something.-&gt;Rogue climate hackers]]
-[[It&#39;s too dangerous.-&gt;Sudden warming]]</tw-passagedata><tw-passagedata pid="94" name="Rogue climate hackers" tags="" position="460,5008" size="100,100">They choose to try. 
+[[It&#39;s too dangerous.-&gt;Sudden warming]]</tw-passagedata><tw-passagedata pid="93" name="Rogue climate hackers" tags="" position="460,5008" size="100,100">They choose to try. 
 
 ((There’s another “roll of the dice”, including a (smaller) chance that the whole human race dies. Luckily, for this timeline, the projects somewhat work, but do have unintended consequences that result in famine in parts of the world.))
 
@@ -1257,15 +1306,15 @@ Should they do it?
 Roll a dice.
 
 [[Welcome to 2080 (Slow Fade)]]
-[[Geo-engineering FAIL]] </tw-passagedata><tw-passagedata pid="95" name="Sudden warming" tags="" position="1053,5001" size="100,100">The effects are terrible: mass extinctions, devastated crops. The biggest impacts are in the oceans - in the first year, fish stocks halve. Then they halve again. 
+[[Geo-engineering FAIL]] </tw-passagedata><tw-passagedata pid="94" name="Sudden warming" tags="" position="1053,5001" size="100,100">The effects are terrible: mass extinctions, devastated crops. The biggest impacts are in the oceans - in the first year, fish stocks halve. Then they halve again. 
 
 Millions starve. Billions are displaced. This decade is called the &quot;Terrible 70s&quot;.
 
-[[When will this decade end?-&gt;Welcome to 2080 (Climate Wars)]]</tw-passagedata><tw-passagedata pid="96" name="Red zones" tags="" position="439,5349" size="100,100">Large parts of the world are declared “red zones” where humans can no longer live safely. We talk about “strategic retreat” to safer places, but this creates tensions.
+[[When will this decade end?-&gt;Welcome to 2080 (Climate Wars)]]</tw-passagedata><tw-passagedata pid="95" name="Red zones" tags="" position="439,5349" size="100,100">Large parts of the world are declared “red zones” where humans can no longer live safely. We talk about “strategic retreat” to safer places, but this creates tensions.
 
 Where should these people try to go?
 [[Build new migrating cities-&gt;Migratory cities]]
-[[Retreat to safety-&gt;Local conflicts]]</tw-passagedata><tw-passagedata pid="97" name="Welcome to 2080 (Slow Fade)" tags="" position="451,5200" size="100,100">Some news headlines from January 2080:
+[[Retreat to safety-&gt;Local conflicts]]</tw-passagedata><tw-passagedata pid="96" name="Welcome to 2080 (Slow Fade)" tags="" position="451,5200" size="100,100">Some news headlines from January 2080:
 International Rebel Alliance Led by Boko Haram Dredge Up Decades-Old Strategy from Twitter Archives, Launch Distributed Solar Geoengineering in Southern Hemisphere to Green the Sahel
 
 Not sure how to fit all of this into the headline, but we’re imagining that various rebel groups (like the Chilean guerrillas) join forces to form the rebel alliance 
@@ -1280,9 +1329,9 @@ Remaining American Airlines File for Bankruptcy Following Heatwave-Induced Fligh
  
  The “year without monsoons” leads to record-breaking meningitis epidemic in Mali
 
-[[Just one more decade to go-&gt;Red zones]]</tw-passagedata><tw-passagedata pid="98" name="Post-war devastation" tags="" position="1066,4788" size="100,100">A terrorist group knocks out America’s sulphur dioxide pipe. Suddenly, the world warms as much in 2 years as it did in the 2 decades before that. 
+[[Just one more decade to go-&gt;Red zones]]</tw-passagedata><tw-passagedata pid="97" name="Post-war devastation" tags="" position="1066,4788" size="100,100">A terrorist group knocks out America’s sulphur dioxide pipe. Suddenly, the world warms as much in 2 years as it did in the 2 decades before that. 
 
-[[Sorry, you&#39;re all out of choices.-&gt;Sudden warming]] </tw-passagedata><tw-passagedata pid="99" name="Welcome to 2080 (Climate Wars)" tags="" position="1067,5194" size="100,100">Some news headlines from January 2080:
+[[Sorry, you&#39;re all out of choices.-&gt;Sudden warming]] </tw-passagedata><tw-passagedata pid="98" name="Welcome to 2080 (Climate Wars)" tags="" position="1067,5194" size="100,100">Some news headlines from January 2080:
 
 Chinese colonies in Africa are without water after American NAVY attacks Antarctic ice cargo ships.
 
@@ -1298,17 +1347,17 @@ Serious destabilisation of Arctic Methane Clathrates triggers Tsunamis in Northe
 
 Millions of climate refugees are offered asylum in exchange for work in Antarctic uranium mines. 
 
-[[Just one more decade to go.-&gt;Death cults]]</tw-passagedata><tw-passagedata pid="100" name="Monocorp cities" tags="" position="648,5021" size="100,100">After decades of defunding, democracies have no ability to govern any more. Capitalists aren’t perfect but we trust them more than big government. We decide that private companies should keep running these projects.
+[[Just one more decade to go.-&gt;Death cults]]</tw-passagedata><tw-passagedata pid="99" name="Monocorp cities" tags="" position="648,5021" size="100,100">After decades of defunding, democracies have no ability to govern any more. Capitalists aren’t perfect but we trust them more than big government. We decide that private companies should keep running these projects.
 
 Runaway effects of the climate hacks devastate parts of the world, forcing the last remaining free societies into monocorp cities, where they hope to “earn” citizenship through work… maybe. One day. The unluckiest are forced into jobs on the nascent Mars colony.
 
 [[You made it to 2080!-&gt;Welcome to 2080 (Billionaire Saviours)]]
-</tw-passagedata><tw-passagedata pid="101" name="Climate hacks in conflict" tags="" position="651,4790" size="100,100">Every billionaire has their own pet climate hacking project. It’s an unregulated mess. An activist group suggests that the projects should be nationalized and run democratically.
+</tw-passagedata><tw-passagedata pid="100" name="Climate hacks in conflict" tags="" position="651,4790" size="100,100">Every billionaire has their own pet climate hacking project. It’s an unregulated mess. An activist group suggests that the projects should be nationalized and run democratically.
 
 Should we have citizen groups take them over, or keep things as they are?
 
 [[Democracy, please!-&gt;Welcome to 2080 (Ecotopia)]]
-[[Billionaires know best.-&gt;Monocorp cities]] </tw-passagedata><tw-passagedata pid="102" name="Welcome to 2080 (Billionaire Saviours)" tags="" position="633,5207" size="100,100">Some news headlines from January 2080:
+[[Billionaires know best.-&gt;Monocorp cities]] </tw-passagedata><tw-passagedata pid="101" name="Welcome to 2080 (Billionaire Saviours)" tags="" position="633,5207" size="100,100">Some news headlines from January 2080:
 
 Millions in the Streets as Coalition for Democratic Return Rallies Against TeslaTown
 
@@ -1323,7 +1372,7 @@ The Rise of the Super Wives: how to find the perfect woman who’ll give you tha
  No more blue skies, white due to geoengineering efforts (But people can have any sky color they want thanks to the filters in their corporate-required augmented reality headsets/implants)
 
 [[Just one more decade to go.-&gt;Seething underclass]]
-</tw-passagedata><tw-passagedata pid="103" name="Miscalculation" tags="" position="837,4821" size="100,100">Uh oh.
+</tw-passagedata><tw-passagedata pid="102" name="Miscalculation" tags="" position="837,4821" size="100,100">Uh oh.
 
 Because of a calculation error in the space fleet, the world experiences the hottest year ever. Most of the remaining insects die out, including all bees. The world scrambles to respond before everyone dies of hunger.
 
@@ -1333,11 +1382,11 @@ Roll the dice.
 [[Invent insect drones]]
 [[Fail to invent insect drones]]
 
-((Introduce the check: did you do carbon capture?))</tw-passagedata><tw-passagedata pid="104" name="Invent insect drones" tags="" position="840,5024" size="100,100">We manage to release pollinating drones and new heat-resistant crops that don’t need to be pollinated, so most people are saved. But it’s still a year of immense food shortages and millions die.
+((Introduce the check: did you do carbon capture?))</tw-passagedata><tw-passagedata pid="103" name="Invent insect drones" tags="" position="840,5024" size="100,100">We manage to release pollinating drones and new heat-resistant crops that don’t need to be pollinated, so most people are saved. But it’s still a year of immense food shortages and millions die.
 
 Humanity starts to build climate-domes.
 
-[[Welcome to 2080 (Designer Planet)]]</tw-passagedata><tw-passagedata pid="105" name="Fail to invent insect drones" tags="" position="1246,4975" size="100,100"></tw-passagedata><tw-passagedata pid="106" name="Welcome to 2080 (Designer Planet)" tags="" position="841,5195" size="100,100">Some news headlines from January 2080:
+[[Welcome to 2080 (Designer Planet)]]</tw-passagedata><tw-passagedata pid="104" name="Fail to invent insect drones" tags="" position="1246,4975" size="100,100"></tw-passagedata><tw-passagedata pid="105" name="Welcome to 2080 (Designer Planet)" tags="" position="841,5195" size="100,100">Some news headlines from January 2080:
 
 Most major coastal cities flooded due to sea level rise
 
@@ -1361,14 +1410,14 @@ No snow recorded anywhere in the world in 2085. Christmas is cancelled for real.
 
 Farewell to outdoor nature! And 5 steps to create an indoor tropical paradise
 
-[[Just one more decade to go.-&gt;Climate domes]]</tw-passagedata><tw-passagedata pid="107" name="Migratory cities" tags="" position="513,5514" size="100,100">[[Welcome to 2090 (Slow Fade Conflict)]]
-</tw-passagedata><tw-passagedata pid="108" name="Local conflicts" tags="" position="901,5350" size="100,100">Millions try to move to the “green zones”, parts of the world that are more liveable. This leads to a decade of thousands of small-scale regional wars throughout the world. 
+[[Just one more decade to go.-&gt;Climate domes]]</tw-passagedata><tw-passagedata pid="106" name="Migratory cities" tags="" position="513,5514" size="100,100">[[Welcome to 2090 (Slow Fade Conflict)]]
+</tw-passagedata><tw-passagedata pid="107" name="Local conflicts" tags="" position="901,5350" size="100,100">Millions try to move to the “green zones”, parts of the world that are more liveable. This leads to a decade of thousands of small-scale regional wars throughout the world. 
 
 Oh hey, quick question: does anyone have nuclear weapons?
 
 [[Oh yeah. They&#39;re everywhere.-&gt;Nukes]]
 [[No, luckily we disbanded all the nukes earlier in the century - I forgot to mention it!-&gt;Small scale conflict]]
-</tw-passagedata><tw-passagedata pid="109" name="Welcome to 2090 (Slow Fade Conflict)" tags="" position="411,5697" size="100,100">Some headlines from January 2090:
+</tw-passagedata><tw-passagedata pid="108" name="Welcome to 2090 (Slow Fade Conflict)" tags="" position="411,5697" size="100,100">Some headlines from January 2090:
 Lightning Strikes Twice! Ben Affleck III Wins Another Child Permit in Parenting Lottery (Lucky Bastard)
 
 Latest Poll: 30% of Global Population Hopes to Move to Mars
@@ -1383,12 +1432,12 @@ Last Holdouts Finally Abandon the Sahel
 
 Global Fish Populations Collapse Due to Ocean Acidification
 
-[[You made it to the end of the century!-&gt;2100 (Slow Fade)]]</tw-passagedata><tw-passagedata pid="110" name="The end of Nation States" tags="" position="192,5384" size="100,100">Nation states do less and less - they’re just an administrative hassle and a barrier to truly fair global decision making.
+[[You made it to the end of the century!-&gt;2100 (Slow Fade)]]</tw-passagedata><tw-passagedata pid="109" name="The end of Nation States" tags="" position="192,5384" size="100,100">Nation states do less and less - they’re just an administrative hassle and a barrier to truly fair global decision making.
 
 We finally abolish nation states and replace them with a network of local democracies, with fair representation from every community in the world on a central world council. Citizens are very active within the politics of their own cities or small communities.
 
 [[Everything&#39;s going great!-&gt;Martians return]]
-</tw-passagedata><tw-passagedata pid="111" name="Welcome to 2090 (Ecotopia)" tags="" position="190,5800" size="100,100">Want to read our top story from January 2090?
+</tw-passagedata><tw-passagedata pid="110" name="Welcome to 2090 (Ecotopia)" tags="" position="190,5800" size="100,100">Want to read our top story from January 2090?
 [[Snow Day]] 
 
 Some other headlines from January 2090:
@@ -1407,12 +1456,12 @@ We got our seasons back to the 2020s!
 
 Penguins celebrate as polar bears are repatriated to the Arctic (they will be on a diet for a while)
 
-[[You made it to the end of the century!-&gt;2100 (Ecotopia)]]</tw-passagedata><tw-passagedata pid="112" name="Seething underclass" tags="" position="633,5377" size="100,100">Some climate hacks do work, and create gorgeous, liveable micro-paradise zones in parts of the planet. You have to be very rich to live there, though. There is a huge, angry underclass. 
+[[You made it to the end of the century!-&gt;2100 (Ecotopia)]]</tw-passagedata><tw-passagedata pid="111" name="Seething underclass" tags="" position="633,5377" size="100,100">Some climate hacks do work, and create gorgeous, liveable micro-paradise zones in parts of the planet. You have to be very rich to live there, though. There is a huge, angry underclass. 
 
 Should the underclass fight for a place amongst them, or overthrow this whole rotten system?
 
 [[Fight for a spot in paradise!-&gt;Reality shows]]
-[[Eat the rich.-&gt;Underclass uprising]]</tw-passagedata><tw-passagedata pid="113" name="Welcome to 2090 (Billionaire Saviours)" tags="" position="665,5710" size="100,100">Some headlines from January 2090:
+[[Eat the rich.-&gt;Underclass uprising]]</tw-passagedata><tw-passagedata pid="112" name="Welcome to 2090 (Billionaire Saviours)" tags="" position="665,5710" size="100,100">Some headlines from January 2090:
 
 Activism driven further underground. Massive surveillance and social control, + the bread and circuses aspect of the reality 
 
@@ -1426,7 +1475,7 @@ Activism driven further underground. Massive surveillance and social control, + 
 
 Massive sacrifice zones - large swathes of the earth basically swept clear of life (colonialism 3.0)
 
-[[You made it to the end of the century!-&gt;2100 (Billionaire Saviours)]]</tw-passagedata><tw-passagedata pid="114" name="Underclass uprising" tags="" position="341,5509" size="100,100">[[Welcome to 2090 (Ecotopia)]]</tw-passagedata><tw-passagedata pid="115" name="Climate domes" tags="" position="807,5481" size="100,100">Improvements in the space-mirror fleet and other adaptation technologies help, but a lot of the outside world is still a hostile, frightening place. Most people retreat inside of climate-controlled domes, or build cities underground.
+[[You made it to the end of the century!-&gt;2100 (Billionaire Saviours)]]</tw-passagedata><tw-passagedata pid="113" name="Underclass uprising" tags="" position="341,5509" size="100,100">[[Welcome to 2090 (Ecotopia)]]</tw-passagedata><tw-passagedata pid="114" name="Climate domes" tags="" position="807,5481" size="100,100">Improvements in the space-mirror fleet and other adaptation technologies help, but a lot of the outside world is still a hostile, frightening place. Most people retreat inside of climate-controlled domes, or build cities underground.
 
 The idea of “nature” or “wild space” becomes a distant memory. 
 
@@ -1436,7 +1485,7 @@ Should we quash these terrorist groups?
 
 (link-reveal-goto: &quot;Yes&quot;, &quot;Quash terrorists&quot;)[(set: $democracy to &quot;no&quot;)]
 (link-reveal-goto: &quot;No&quot;, &quot;Quash terrorists&quot;)[(set: $democracy to &quot;yes&quot;)]
-</tw-passagedata><tw-passagedata pid="116" name="Welcome to 2090 (Designer Planet)" tags="" position="809,5786" size="100,100">Some headlines from January 2090:
+</tw-passagedata><tw-passagedata pid="115" name="Welcome to 2090 (Designer Planet)" tags="" position="809,5786" size="100,100">Some headlines from January 2090:
 
 De-extinction update: Scientists in Mumbai try to resurrect tigers 
 
@@ -1458,9 +1507,9 @@ Large project for restoring Continental Ice Sheets in Antarctica start
 
 Whither Himalayan rivers? 
 
-[[You made it to the end of the century!-&gt;2100 (Designer Planet)]]</tw-passagedata><tw-passagedata pid="117" name="Nukes" tags="" position="1149,5535" size="100,100">We drop a couple of nukes, why not. But things are already so awful it doesn’t really change that much. On the day the largest bomb is dropped, more people die of the infectious diseases that now run rampant.
+[[You made it to the end of the century!-&gt;2100 (Designer Planet)]]</tw-passagedata><tw-passagedata pid="116" name="Nukes" tags="" position="1149,5535" size="100,100">We drop a couple of nukes, why not. But things are already so awful it doesn’t really change that much. On the day the largest bomb is dropped, more people die of the infectious diseases that now run rampant.
 
-[[Well, you survived the decade.-&gt;Welcome to 2090 (Climate Wars)]]</tw-passagedata><tw-passagedata pid="118" name="Welcome to 2090 (Climate Wars)" tags="" position="1048,5698" size="100,100">Some headlines from January 2090:
+[[Well, you survived the decade.-&gt;Welcome to 2090 (Climate Wars)]]</tw-passagedata><tw-passagedata pid="117" name="Welcome to 2090 (Climate Wars)" tags="" position="1048,5698" size="100,100">Some headlines from January 2090:
 
 Two-Headed Wolves Slaughtered by Doomsday Cult, The Volcanists, who believe a major volcanic eruption will cool the planet. 
 
@@ -1473,7 +1522,7 @@ Newborn deformity and cancer incidence rates steadily increase after a decade of
 Nuclear winter causes first  snowfall in decades in the Swiss Alps. Water reservoirs finally replenished, people rush to the ponds despite high radiation warnings.   
 
 [[You made it to the end of the century!-&gt;2100 (Climate Wars)]]
-</tw-passagedata><tw-passagedata pid="119" name="Meat raid" tags="" position="60,1402" size="100,100"># California passes ban on selling and trading animal products: boom in illicit underground meat restaurants
+</tw-passagedata><tw-passagedata pid="118" name="Meat raid" tags="" position="132,1404" size="100,100"># California passes ban on selling and trading animal products: boom in illicit underground meat restaurants
 
 By Maria Turtschaninoff
 
@@ -1487,12 +1536,12 @@ During the last prohibition, in the 1930’s, the speakeasies are said to have b
 
 “But we are not so much after the restaurants, or “meat-easies”, says Governor Christina Schwarzenegger. “The bigger issue is the illegal import of beef and pork from other states.”
 
-[[Back to front page-&gt;Welcome to 2030 (Ecotopia)]]</tw-passagedata><tw-passagedata pid="120" name="Snow Day" tags="" position="27,5709" size="100,100">Children in the southern part of the territory formerly known as Finland had the day off from school yesterday, as there was snow for the first time in 80 years. 
+[[Back to front page-&gt;Welcome to 2030 (Ecotopia)]]</tw-passagedata><tw-passagedata pid="119" name="Snow Day" tags="" position="27,5709" size="100,100">Children in the southern part of the territory formerly known as Finland had the day off from school yesterday, as there was snow for the first time in 80 years. 
 	“I wish my parents could have seen this”, said Juhani Larson from Helsinki. I reach him virtually at the school, which is now open again. “My father used to talk about how his grandmother taught him how to ski in the 2010’s. There hasn’t been snow this far south since then.”
 	Snow disappeared from Finland entirely in the late 2040’s. It made its return to the northern parts in the last decade, but this is the first time in 80 years that Southern Finland has seen snow. It did not snow much, and it is expected to melt in the next few days. But it is a very promising sign.
 	“I have been teaching the children the history of their country. We have drawn skis, talked about what snow meant for brightening the dark winter months, how the animals used to change into white winter coats. They have studied the drastic increase in pests on crops and forest alike as the snow and cold disappeared. We have watched old movies with snow and visited pre-warm Finland virtually. But nothing beats feeling the flakes fall on your face and catching them on your tongue. I am so happy I got to experience this myself.” He grows misty-eyed as he looks out the window of the log cabin where the school is held, at the children playing outside, building snow forts and throwing snowballs. “One of my favorite comics growing up was Calvin and Hobbes. I always wanted to build a snow fort and go sledding. I wasn’t sure I would ever see the day when that was possible, right in my hometown. And now these children will grow up with snow as part of their everyday winters, once again.” He glances out the window again. “I’m sorry, can we wrap this up? There’s a snowball fight going on, and I sure would like to join.”
 
-[[Welcome to 2090 (Ecotopia)]]</tw-passagedata><tw-passagedata pid="121" name="Obituary for Capitalism" tags="" position="60,4681" size="100,100">Obituaries
+[[Welcome to 2090 (Ecotopia)]]</tw-passagedata><tw-passagedata pid="120" name="Obituary for Capitalism" tags="" position="60,4681" size="100,100">Obituaries
 Capitalism
 Unnoticed by most, Capitalism has passed away at the ripe old age of 300 years. The death throes during the last decades were violent and harvested many casualties, but in the end capitalism went with a whimper, not a bang. 
 	In its youth, Capitalism was characterized by a wide-eyed enthusiasm that was contagious. Capitalism loved to travel and loved the finer things in life. It worked hard at many new innovations and technologies, and much of what we have today we owe to the exploits of early Capitalism – good and bad.
@@ -1503,7 +1552,7 @@ Unnoticed by most, Capitalism has passed away at the ripe old age of 300 years. 
 	As happens with many who live long lives, Capitalism had, in the end, outlived most of its friends. The last of them left for Mars in 2062.
 
 
-[[Welcome to 2070 (Ecotopia)]]</tw-passagedata><tw-passagedata pid="122" name="GIPSS" tags="" position="36,5201" size="100,100">Report from the Global Indigenous Peoples Stewardship Summit in 2076
+[[Welcome to 2070 (Ecotopia)]]</tw-passagedata><tw-passagedata pid="121" name="GIPSS" tags="" position="36,5201" size="100,100">Report from the Global Indigenous Peoples Stewardship Summit in 2076
 
 “When we began the Indigenous People Stewardship programme, many non-indigenous people thought this meant that everyone had to live in tents or huts in the wilderness”, elder Ásllat-Mihku Petra, or Petra Laiti as she is also known, says with a wry smile. “Now look at the world: the floating botanical cities of Korea, the underwater city of Oceania in Japan and Green New York.”
 	Laiti has been showing me around the site for the GIPSS in Rásttigáisá, Sápmi. The site sits at the foot of mount Rásttigáisá.
@@ -1524,7 +1573,7 @@ Unnoticed by most, Capitalism has passed away at the ripe old age of 300 years. 
 	I take one last look at Mount Rásttigáisá, the holy mountain which has been teaching and guiding the Sámi people for centuries. And when camp is broken after Midsummer there will not be a single trace of the summit in a month or so, Laiti assures me. “First there will be dead circles where the tents and teepees and yurts and lavvus have stood. But by the end of summer, the grass will once more be green.”
 
 
-[[Welcome to 2080 (Ecotopia)]] </tw-passagedata><tw-passagedata pid="123" name="Green Mall Review" tags="" position="90,3297" size="100,100">Yelp review of a green mall (2050)
+[[Welcome to 2080 (Ecotopia)]] </tw-passagedata><tw-passagedata pid="122" name="Green Mall Review" tags="" position="90,3297" size="100,100">Yelp review of a green mall (2050)
 
 I went to this mall with my grandchild, who assured me it was “dope”. I don’t like it when the youth of today assume the sayings of my generation. Get off my lawn, kids! Speaking of lawns, there were way too many of them at this mall. A mall should be inside a huge concrete building, and lawns should be well clipped and outside my house. Not on top of roofs! On top pf that, these lawns had probably never seen a mower and were full of wildflowers and butterflies and bugs and things. NOT sanitary. I think I even saw a goat grazing? In a city? Jeez.
 I deduct the first star because a bird pooped on me when we got there. This is why we need to stop biking everywhere and resume driving in cars. I get way too much fresh air and bird poop. 
@@ -1536,22 +1585,19 @@ I heard the person who came up with the concept of the repair mall would be rich
 Sincerely
 A Gen X shopaholic.
 
-[[Welcome to 2050 (Ecotopia)]]</tw-passagedata><tw-passagedata pid="124" name="Pay for transition" tags="" position="174,1846" size="100,100">The world agrees to the fastest possible transition to a zero emissions world, even though this will mean huge changes to people&#39;s lifestyles. 
+[[Welcome to 2050 (Ecotopia)]]</tw-passagedata><tw-passagedata pid="123" name="Pay for transition" tags="" position="214,1740" size="100,100">The world agrees to the fastest possible transition to a zero emissions world, even though this will require some changes to people&#39;s lifestyles in rich countries. Cars, meat and fashion slowly turn into luxury items.
 
-((Large taxes are imposed on polluting industries that turn formerly common things into luxury items: meat, cars, and fast fashion all become suddenly unaffordable for the majority of people.))
-
-((Parts of the US just fully ban meat, but other places try to reduce consumption through taxation and incentives.))
-
-To do this, we&#39;re going to need alternatives. If people can&#39;t afford cars any more, we need to build more public transport (even in smaller cities). We need high-quality, affordable protein alternatives to get people to stop eating meat. We need to build differnet kinds of buildings, replace old gas heating systems, and power our cities in different ways. 
-
-(Living buildings, filled with bacteria, that are self-healing and sequester carbon)
+A lot of people grumble about the lack of alternatives. It&#39;s becoming clear that you can&#39;t just take things away without offering alternatives. That&#39;s going to require investment into public transport (even in smaller cities), high-quality, affordable protein alternatives, new ways to heat their homes and build new housing.
 
 All of this is going to cost a LOT of money. 
 
-How will we pay for it?
-[[Totally reform capitalism. Ensure that the rich pay for everything, and the new infrastructure should belong to everyone.-&gt;Reform capitalism]]
-[[Nationalize the biggest polluters and go full Communist.-&gt;Transitional fracking]]
-Give grants to tech companies who are working on solutions.-&gt;(billionaire saviours)</tw-passagedata><tw-passagedata pid="125" name="GHW" tags="" position="111,2226" size="100,100">The rich have a point. By altering the economy in such fundamental ways, GDP really has dropped in many places. Which is weird, because most people have seen a marked improvement in their quality of life.
+**How should we pay for it?**
+
+[[Reform capitalism. The super-rich should pay for everything, and the new infrastructure should belong to everyone.-&gt;Reform capitalism]]
+
+[[Nationalize the biggest polluters.-&gt;Transitional fracking]]
+
+[[Offer tax breaks and grants to tech companies who are working on solutions.-&gt;Green is the new gold]]</tw-passagedata><tw-passagedata pid="124" name="GHW" tags="" position="103,2141" size="100,100">The rich have a point. By altering the economy in such fundamental ways, GDP really has dropped in many places. Which is weird, because most people have seen a marked improvement in their quality of life.
 
 So, obviously how we&#39;re measuring the economy is wrong!
 
@@ -1559,17 +1605,17 @@ The world stops focusing on stuff like GDP and stock market growth and start foc
 
 With this score, the proposed actions are predicted to dramatically improve the economy.
 
-[[Congrats! You made it to 2040-&gt;Welcome to 2040 (Ecotopia)]] </tw-passagedata><tw-passagedata pid="126" name="Global Commons Fund" tags="" position="262,3768" size="100,100">The world agrees! And decide that the global commons fund can also be used to support any projects that increase GHW anywhere in the world. Global inequality plunges to the lowest level it’s ever been.
+[[Congrats! You made it to 2040!-&gt;Welcome to 2040 (Ecotopia)]] </tw-passagedata><tw-passagedata pid="125" name="Global Commons Fund" tags="" position="262,3768" size="100,100">The world agrees! And decide that the global commons fund can also be used to support any projects that increase GHW anywhere in the world. Global inequality plunges to the lowest level it’s ever been.
 
-[[Woohoo! You made it to 2060.-&gt;Welcome to 2060 (Ecotopia)]]</tw-passagedata><tw-passagedata pid="127" name="Over-cooling" tags="" position="40,4544" size="100,100">Actually, we’ve cooled too quickly and have a mass species die-off as they cannot cope with rapid temp change
-</tw-passagedata><tw-passagedata pid="128" name="Martians return" tags="" position="197,5551" size="100,100">Uh oh. Remember all the billionaires we kicked out back in XX and sent to live on Mars?
+[[Woohoo! You made it to 2060.-&gt;Welcome to 2060 (Ecotopia)]]</tw-passagedata><tw-passagedata pid="126" name="Over-cooling" tags="" position="40,4544" size="100,100">Actually, we’ve cooled too quickly and have a mass species die-off as they cannot cope with rapid temp change
+</tw-passagedata><tw-passagedata pid="127" name="Martians return" tags="" position="197,5551" size="100,100">Uh oh. Remember all the billionaires we kicked out back in XX and sent to live on Mars?
 
 They just invaded Earth. They say they want their planet back?
 
 ((Do you still have some kind of planetary defence system in place?))
 
 [[Yes!-&gt;Welcome to 2090 (Ecotopia)]]
-[[No-&gt;Welcome to 2090 (Billionare Ecotopia takeover)]]</tw-passagedata><tw-passagedata pid="129" name="Welcome to 2090 (Billionare Ecotopia takeover)" tags="" position="372,5973" size="100,100">#So, where do we end up by the end of the century?
+[[No-&gt;Welcome to 2090 (Billionare Ecotopia takeover)]]</tw-passagedata><tw-passagedata pid="128" name="Welcome to 2090 (Billionare Ecotopia takeover)" tags="" position="372,5973" size="100,100">#So, where do we end up by the end of the century?
 
 Oh, we were doing so well!
 
@@ -1577,29 +1623,29 @@ We managed to avert the worst effects of climate change and even started restori
 
 I&#39;m sure the billionaire Martians are going to have a great time turning it all into a safari park for the rich.
 
-[[Take action]]</tw-passagedata><tw-passagedata pid="130" name="2100 (Ecotopia)" tags="" position="196,5976" size="100,100">#So, where do we end up by the end of the century?
+[[Take action]]</tw-passagedata><tw-passagedata pid="129" name="2100 (Ecotopia)" tags="" position="196,5976" size="100,100">#So, where do we end up by the end of the century?
 
 Looking back, we&#39;d describe the 21st century as one of profound change, mostly for the better.
 
 After peaking at 9-billion people in the 2050s, the world population has declined to 7-billion. We will remember this as the century when we stopped prioritising growth above everything else, and started valuing the truly valuable things: human welfare and the environment. Nature is thriving and species we thought were extinct recover, as well as new species evolved for the new wild places of the earth.
 
-[[Take action]]</tw-passagedata><tw-passagedata pid="131" name="Faffing" tags="" position="479,2237" size="100,100">Rich countries threaten to drop out of the summit completely if pushed too hard, arguing that they’re still recovering from the post-Covid economic crash. We decide it’s more important to keep everyone in the process than to pass aggressive targets now. We decide to pass laughably small targets that we aim to increase in future.
+[[Take action]]</tw-passagedata><tw-passagedata pid="130" name="Faffing" tags="" position="674,2179" size="100,100">Rich countries threaten to drop out of the summit completely if pushed too hard, arguing that they’re still recovering from the post-Covid economic crash. We decide it’s more important to keep everyone in the process than to pass aggressive targets now. We decide to pass laughably small targets that we aim to increase in future.
 
-[[Well, you made it through the decade!-&gt;Welcome to 2040 (Slow Fade)]]</tw-passagedata><tw-passagedata pid="132" name="Refugee conflict" tags="" position="922,2732" size="100,100">Rich countries argue this in unfair. There are far too many refugees. Their entire way of life will be disrupted if they have to do this.
+[[Well, you made it through the decade!-&gt;Welcome to 2040 (Slow Fade)]]</tw-passagedata><tw-passagedata pid="131" name="Refugee conflict" tags="" position="847,2685" size="100,100">Rich countries argue this in unfair. There are far too many refugees. Their entire way of life will be disrupted if they have to do this.
 
-[[A number of strongmen leaders emerge in rich countries that say they&#39;ll pull out of the international migrant treaty.-&gt;Strongmen]]</tw-passagedata><tw-passagedata pid="133" name="Patchwork of solutions" tags="" position="440,3059" size="100,100">Rich countries agree to reduce their own emissions, but refuse to contribute to a global climate change fund. “Let every country deal with their own problems”, they say. In polluting countries, this leads to a patchwork of ineffective solutions like a personal sustainability score to try to get individuals to change their consumption habits, and some more cap-and-trade projects that are full of loopholes. Some cities are now fully “green”, but others are emitting more than ever.
+[[A number of strongmen leaders emerge in rich countries that say they&#39;ll pull out of the international migrant treaty.-&gt;Strongmen]]</tw-passagedata><tw-passagedata pid="132" name="Patchwork of solutions" tags="" position="440,3059" size="100,100">Rich countries agree to reduce their own emissions, but refuse to contribute to a global climate change fund. “Let every country deal with their own problems”, they say. In polluting countries, this leads to a patchwork of ineffective solutions like a personal sustainability score to try to get individuals to change their consumption habits, and some more cap-and-trade projects that are full of loopholes. Some cities are now fully “green”, but others are emitting more than ever.
 
-Oh, but hold up! You&#39;re [[getting word of some big news in Greenland.-&gt;Arctic extraction]]</tw-passagedata><tw-passagedata pid="134" name="Lucky procrastinator" tags="" position="91,3139" size="100,100">Maybe we&#39;ll get really lucky and there will be a new technological breakthrough that will make low-carbon lifestyles so cheap it will happen automatically, within 5 years.
+Oh, but hold up! You&#39;re [[getting word of some big news in Greenland.-&gt;Arctic extraction]]</tw-passagedata><tw-passagedata pid="133" name="Lucky procrastinator" tags="" position="91,3139" size="100,100">Maybe we&#39;ll get really lucky and there will be a new technological breakthrough that will make low-carbon lifestyles so cheap it will happen automatically, within 5 years.
 
 (Roll the dice.))
 [[Wow that was lucky.-&gt;Welcome to 2050 (Ecotopia)]]
-[[Uh no, that didn&#39;t work.-&gt;Welcome to 2050 (Slow Fade)]]</tw-passagedata><tw-passagedata pid="135" name="Arctic extraction" tags="" position="416,3196" size="100,100">A new technological breakthrough means we&#39;ve become aware of huge new oil and gas reserves in the Arctic. Thanks to global warming, they&#39;re going to be easier to exploit than ever before!
+[[Uh no, that didn&#39;t work.-&gt;Welcome to 2050 (Slow Fade)]]</tw-passagedata><tw-passagedata pid="134" name="Arctic extraction" tags="" position="416,3196" size="100,100">A new technological breakthrough means we&#39;ve become aware of huge new oil and gas reserves in the Arctic. Thanks to global warming, they&#39;re going to be easier to exploit than ever before!
 
 Greenland is a poor country, so they have no choice but to offer licenses to the thronges of companies that flock there looking to make quick money. This entirely reverses any progress that&#39;s been made.
 
 Somehow, despite everything we&#39;ve tried, we&#39;re polluting even more than ever before.
 
-[[You made it to 2050-&gt;Welcome to 2050 (Slow Fade)]] </tw-passagedata><tw-passagedata pid="136" name="Zoonotic pandemic" tags="" position="524,4508" size="100,100">Climate change disrupts wildlife migration, leading to the emergence of a terrible new virus.
+[[You made it to 2050-&gt;Welcome to 2050 (Slow Fade)]] </tw-passagedata><tw-passagedata pid="135" name="Zoonotic pandemic" tags="" position="524,4508" size="100,100">Climate change disrupts wildlife migration, leading to the emergence of a terrible new virus.
 
 Within 6 months, it spreads all around the world, killing 2% of the world’s population and decimating the global economy. 
 
@@ -1608,17 +1654,17 @@ Talking about geo-engineering is now nobody’s priority.
 [[Well, you made it through the 2060s.-&gt;Welcome to 2070 (Slow Fade)]]
 
 (So the hantavirus scenario I did above is meant to tie a bit into the climate-pandemics link. We could move it down. The underlying reasoning is from this paper - basically, climate change lets species meet for the first time, they share viruses, and then those viruses can hop into humans: https://www.biorxiv.org/content/10.1101/2020.01.24.918755v2)
-Cotton Rats in the US.</tw-passagedata><tw-passagedata pid="137" name="Small scale conflict" tags="" position="922,5594" size="100,100">Phew. There are a lot of small-scale conflicts and civil wars over resources. 
+Cotton Rats in the US.</tw-passagedata><tw-passagedata pid="136" name="Small scale conflict" tags="" position="922,5594" size="100,100">Phew. There are a lot of small-scale conflicts and civil wars over resources. 
 
 Luckily, it never escales into global or nuclear war.
 
 [[Okay, at least most of us are alive.-&gt;Welcome to 2090 (Slow Fade Migration)]]
 
-</tw-passagedata><tw-passagedata pid="138" name="2100 (Slow Fade)" tags="" position="515,5983" size="100,100">#So, where do we end up by the end of the century?
+</tw-passagedata><tw-passagedata pid="137" name="2100 (Slow Fade)" tags="" position="515,5983" size="100,100">#So, where do we end up by the end of the century?
 
 Humanity huddles in the places that are left, poorer, sicker, hungrier, withstanding endless barrages of extreme weather events and plagues, and slowly learning to adapt to them. Many people join new religions that preach “anti-natalism”, the idea that having kids is immoral and it’s time for the human race to end.
 
-[[Take action]]</tw-passagedata><tw-passagedata pid="139" name="Welcome to 2090 (Slow Fade Migration)" tags="" position="532,5694" size="100,100">Some headlines from January 2090:
+[[Take action]]</tw-passagedata><tw-passagedata pid="138" name="Welcome to 2090 (Slow Fade Migration)" tags="" position="532,5694" size="100,100">Some headlines from January 2090:
 Indian Tour Operators Advertising Winter Scuba Tours of the Sunken City of Malé (Maldives)
 
 Prof. Martha Stewart IV Warns That Synthetic Rice, Beans May Not Be as Safe as Manufacturers Claim
@@ -1633,18 +1679,18 @@ Last Holdouts Finally Abandon the Sahel
 
 Global Fish Populations Collapse Due to Ocean Acidification
 
-[[You made it to the end of the century!-&gt;2100 (Slow Fade)]]</tw-passagedata><tw-passagedata pid="140" name="Take action" tags="" position="625,6328" size="100,100"># Take Action
+[[You made it to the end of the century!-&gt;2100 (Slow Fade)]]</tw-passagedata><tw-passagedata pid="139" name="Take action" tags="" position="625,6328" size="100,100"># Take Action
 
 Thanks for playing! We hope this has helped you think about things. The main thing we wanted to communicate is that your choices matter.
 
 Want to do something in the real world? Here&#39;s a final choices you can make.
 ((Share this game.))
 ((Find a climate justice group near you.))
-((Learn more.))</tw-passagedata><tw-passagedata pid="141" name="Civil war version" tags="" position="1215,2864" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="142" name="Global South Strike" tags="" position="844,3117" size="100,100">The global south enter a strike. They stay united and cut off natural resources. They refuse to export food, minerals and metals, until the rich world stops polluting and agrees to contribute to a global environmental repair fund.
+((Learn more.))</tw-passagedata><tw-passagedata pid="140" name="Civil war version" tags="" position="1247,2885" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="141" name="Global South Strike" tags="" position="844,3117" size="100,100">The global south enter a strike. They stay united and cut off natural resources. They refuse to export food, minerals and metals, until the rich world stops polluting and agrees to contribute to a global environmental repair fund.
 
 This hits the rich world where it hurts. The manufacturing industries can&#39;t produce much. The new iPhone launch is delayed. Worse, no-one in the rich world can get their hands on a decent cup of coffee. 
 
-[[You made it to 2050-&gt;Welcome to 2050 (Designer Planet)]] </tw-passagedata><tw-passagedata pid="143" name="Surprising success geo-engineering" tags="" position="816,3597" size="100,100">An unlikely alliance of Saudi billionaires who miss being able to go outside without dying, disgruntled former SpaceX engineers and K-Pop stars looking to leave a legacy surprise the world by launching a fleet of space mirrors to reflect sunlight away from the planet. 
+[[You made it to 2050-&gt;Welcome to 2050 (Designer Planet)]] </tw-passagedata><tw-passagedata pid="142" name="Surprising success geo-engineering" tags="" position="816,3597" size="100,100">An unlikely alliance of Saudi billionaires who miss being able to go outside without dying, disgruntled former SpaceX engineers and K-Pop stars looking to leave a legacy surprise the world by launching a fleet of space mirrors to reflect sunlight away from the planet. 
 
 A K-Pop supergroup promotes the project by releasing a song called SPACE SPACE PLANET BABY that tops the charts in every country.
 
@@ -1652,7 +1698,7 @@ The project is successful beyond anyone&#39;s expectations. And because the K-Po
 
 The group put a global council in place with representatives from all around the world, who will be responsible for managing the space fleet. All representatives must be under the age of 20, because they have the most stake in the future of the planet.
 
-[[So K-Pop saves the world?-&gt;Global climate council]]</tw-passagedata><tw-passagedata pid="144" name="Death cults" tags="" position="1067,5344" size="100,100">The losers of the climate wars continue to try to rebuild their economies. 
+[[So K-Pop saves the world?-&gt;Global climate council]]</tw-passagedata><tw-passagedata pid="143" name="Death cults" tags="" position="1067,5344" size="100,100">The losers of the climate wars continue to try to rebuild their economies. 
 
 Desperate, their economy in tatters, a lot of them see small doomsday cults emerge, some of them with nuclear bombs.
 
@@ -1660,23 +1706,25 @@ The leader of one of these cults wants to publish an open letter on your news si
 
 Are you going to let her publish her letter?
 [[Yes, let&#39;s end it all.-&gt;Nukes]]
-[[No, it&#39;s not over yet.-&gt;Welcome to 2090 (Climate Wars)]]</tw-passagedata><tw-passagedata pid="145" name="2100 (Climate Wars)" tags="" position="1030,5881" size="100,100">#So, where do we end up by the end of the century?
+[[No, it&#39;s not over yet.-&gt;Welcome to 2090 (Climate Wars)]]</tw-passagedata><tw-passagedata pid="144" name="2100 (Climate Wars)" tags="" position="1030,5881" size="100,100">#So, where do we end up by the end of the century?
 
 We will look back on this as one of the bleakest times in human history. Like the fall of Rome or Europe’s Dark Ages, a reminder that humanity can go backwards as well as forwards. The gains of the 20th century have mostly been wiped out. Average lifespans have returned to pre-1900s levels. We will rebuild the world, but so much has been lost.
 
-[[Take action]]</tw-passagedata><tw-passagedata pid="146" name="Choose your country" tags="" position="691,452" size="100,100">Where is your news organisation based?
+[[Take action]]</tw-passagedata><tw-passagedata pid="145" name="Choose your country" tags="" position="691,452" size="100,100">Where is your news organisation based?
 
 USA
 Europe
 China
 India
-South Africa</tw-passagedata><tw-passagedata pid="147" name="Muskbucks" tags="" position="1321,1906" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="148" name="Corporate Orange Zones" tags="" position="623,3158" size="100,100">We let multinationals buy up all this land. They essentially control the governments and the only state services are funded by them.
+South Africa</tw-passagedata><tw-passagedata pid="146" name="Muskbucks" tags="" position="1321,1906" size="100,100">Doesn&#39;t it make more sense for the government to just give people cash and let them spend it how they want to? Leave education to the education experts, and healthcare to the healthcare experts!
 
-[[You made it to 2050.-&gt;Welcome to 2050 (Billionaire Saviours)]] </tw-passagedata><tw-passagedata pid="149" name="War over Orange Zones" tags="" position="887,2998" size="100,100">A series of territory wars are started over who gets to control the new Orange Zone territories. While they&#39;re hard to live in, they might be of strategic importance down the line!
+People will have more choice, and private businesses tend to be more efficient than government.</tw-passagedata><tw-passagedata pid="147" name="Corporate Orange Zones" tags="" position="623,3158" size="100,100">We let multinationals buy up all this land. They essentially control the governments and the only state services are funded by them.
+
+[[You made it to 2050.-&gt;Welcome to 2050 (Billionaire Saviours)]] </tw-passagedata><tw-passagedata pid="148" name="War over Orange Zones" tags="" position="887,2998" size="100,100">A series of territory wars are started over who gets to control the new Orange Zone territories. While they&#39;re hard to live in, they might be of strategic importance down the line!
 
 A series of small-scale wars erupt around the world, that are really proxy wars about which of the world&#39;s superpowers have more power.
 
-[[You made it to 2050.-&gt;Welcome to 2050 (Climate Wars)]]</tw-passagedata><tw-passagedata pid="150" name="Experimental Orange Zones" tags="" position="1335,3261" size="100,100">Alternative forms of society start to emerge in the fringes. They&#39;re tough landscapes, but these become incubators for alternative economies and value systems. 
+[[You made it to 2050.-&gt;Welcome to 2050 (Climate Wars)]]</tw-passagedata><tw-passagedata pid="149" name="Experimental Orange Zones" tags="" position="1335,3261" size="100,100">Alternative forms of society start to emerge in the fringes. They&#39;re tough landscapes, but these become incubators for alternative economies and value systems. 
 
 Some of them start to thrive.
 
@@ -1684,52 +1732,52 @@ Some of them start to thrive.
 
 Some thriving alternatives to the corporate city-states start to emerge at the fringes or in the hinterlands. In some places these experiments in other ways of living are crushed by the corporate powers; in other places they are left alone as outside the view and control of the corporations. 
 
-Later in the century as some corporate-states start to flounder, these experiments in other forms of society start to link to provide a clear alternative. Leads to something like Ecosocialist Utopia but at higher level of warming and with greater dependence on geoengineering.</tw-passagedata><tw-passagedata pid="151" name="Earth terraforming" tags="" position="624,4387" size="100,100">We decide it’s probably more important to terraform the planet we’re already on. We invest more money into climate hacking projects, with mixed success but no civilization-ending disasters. There’s still a Mars colony, but it’s small, the passion project of a single billionaire.
+Later in the century as some corporate-states start to flounder, these experiments in other forms of society start to link to provide a clear alternative. Leads to something like Ecosocialist Utopia but at higher level of warming and with greater dependence on geoengineering.</tw-passagedata><tw-passagedata pid="150" name="Earth terraforming" tags="" position="624,4387" size="100,100">We decide it’s probably more important to terraform the planet we’re already on. We invest more money into climate hacking projects, with mixed success but no civilization-ending disasters. There’s still a Mars colony, but it’s small, the passion project of a single billionaire.
 
-[[Well, you made it through the 2060s.-&gt;Welcome to 2070 (Billionaire Saviours)]]</tw-passagedata><tw-passagedata pid="152" name="Reality shows" tags="" position="633,5527" size="100,100">Billionaires start a reality show where lucky outsiders compete for limited spots in their new paradises. The huge underclass fights over these reality show spots, or the few decent jobs, like being a pregnancy surrogate (or an organ host - part of a Concentrated Organ Harvesting Operation - “COHO”) for billionaires.
+[[Well, you made it through the 2060s.-&gt;Welcome to 2070 (Billionaire Saviours)]]</tw-passagedata><tw-passagedata pid="151" name="Reality shows" tags="" position="633,5527" size="100,100">Billionaires start a reality show where lucky outsiders compete for limited spots in their new paradises. The huge underclass fights over these reality show spots, or the few decent jobs, like being a pregnancy surrogate (or an organ host - part of a Concentrated Organ Harvesting Operation - “COHO”) for billionaires.
 
-[[Well, you survived the decade.-&gt;Welcome to 2090 (Billionaire Saviours)]]</tw-passagedata><tw-passagedata pid="153" name="2100 (Billionaire Saviours)" tags="" position="683,5990" size="100,100">#So, where do we end up by the end of the century?
+[[Well, you survived the decade.-&gt;Welcome to 2090 (Billionaire Saviours)]]</tw-passagedata><tw-passagedata pid="152" name="2100 (Billionaire Saviours)" tags="" position="683,5990" size="100,100">#So, where do we end up by the end of the century?
 
 We mostly avoided the worst effects of climate change, but we completely lost any hope for democracy or fairness. Unfettered disaster capitalism created a blindingly unequal world, where the rich are mostly insulated from climate impacts and there’s a huge, suffering underclass.
 
 Better hope they never rebel.
 
-[[Take action]] </tw-passagedata><tw-passagedata pid="154" name="UBI" tags="" position="908,1701" size="100,100">The push for universal basic income becomes overwelming all around the world. Most countries are under pressure to try UBI projects.
+[[Take action]] </tw-passagedata><tw-passagedata pid="153" name="UBI" tags="" position="957,1736" size="100,100">The push for universal basic income becomes overwelming. Most countries are under pressure to try UBI projects.
 
-There&#39;s just one problem: most countries are still pretty broke after the disastrous 2020s.
+There&#39;s just one problem: the world&#39;s still pretty broke after the disastrous post-Covid 2020s.
 
-**How can they fund UBI projects?**
-
+**How could we fund UBI projects?**
+ 
 [[Privatise most social goods like healthcare and education.-&gt;Muskbucks]]
 
 [[Nationalise natural resource extraction.-&gt;Fracking-funded UBI]]
 
-[[Tax the rich and reform capitalism.-&gt;Reform capitalism]]</tw-passagedata><tw-passagedata pid="155" name="Fracking-funded UBI" tags="" position="1190,1977" size="100,100">We realise that there&#39;s one clear way we could fund UBI projects: fracking. We can consider natural gas a transitional energy source that helps to wean us off dirtier technologies.
+[[Tax the rich and reform capitalism.-&gt;Reform capitalism]]</tw-passagedata><tw-passagedata pid="154" name="Fracking-funded UBI" tags="" position="1191,1989" size="100,100">We realise that there&#39;s one clear way we could fund UBI projects: fracking. We can consider natural gas a transitional energy source that helps to wean us off dirtier technologies.
 
 (Your paper, as an influential voice, supports this...)
 Popular opinion supports this, as the wealth generated is shared equally amongst everyone. 
 
-[[UBI projects are rolled out in most of the world.-&gt;People get richer]]</tw-passagedata><tw-passagedata pid="156" name="People get richer" tags="" position="1201,2220" size="100,100">As people get wealthier, they use a LOT more energy. So, even though they’re switching to renewable sources, we’re using much more energy overall.
+[[UBI projects are rolled out in most of the world.-&gt;People get richer]]</tw-passagedata><tw-passagedata pid="155" name="People get richer" tags="" position="1205,2192" size="100,100">As people get wealthier, they use a LOT more energy. So, even though they’re switching to renewable sources, we’re using much more energy overall.
 
 This leads to a much fairer society, but delays the transition to renewable energy sources.
 
-[[You made it through the decade!-&gt;Welcome to 2040 (Designer Planet)]]</tw-passagedata><tw-passagedata pid="157" name="Sexual revolution" tags="" position="826,2523" size="100,100">UBIs allow many more women to enter politics and we reform democracy so that economic spoils are more fairly distributed. There’s a new sexual revolution. Birth rates continue to fall, marriage rates plummet, 60% of women and 45% of men now identify as queer.
+[[You made it through the decade!-&gt;Welcome to 2040 (Designer Planet)]]</tw-passagedata><tw-passagedata pid="156" name="Sexual revolution" tags="" position="1148,2550" size="100,100">UBIs allow many more women to enter politics and we reform democracy so that economic spoils are more fairly distributed. There’s a new sexual revolution. Birth rates continue to fall, marriage rates plummet, 60% of women and 45% of men now identify as queer.
 
 Is everyone okay with this?
 
 [[Yes, this is great! Let’s fully embrace this! The nuclear family model never worked for women.-&gt;Refugee crisis + designer world]]
-[[This is unnatural! Save our families!-&gt;Women revolt]]</tw-passagedata><tw-passagedata pid="158" name="Women revolt" tags="" position="1371,2864" size="100,100">Empowered women don&#39;t go quietly.
+[[This is unnatural! Save our families!-&gt;Women revolt]]</tw-passagedata><tw-passagedata pid="157" name="Women revolt" tags="" position="1385,2817" size="100,100">Empowered women don&#39;t go quietly.
 Birth strike.
 Birth rates plummet.
 
 OR
-They just take over, and we stay on this timeline.</tw-passagedata><tw-passagedata pid="159" name="Quash terrorists" tags="" position="815,5637" size="100,100">(if: $democracy is &quot;yes&quot;)[Sorry, this isn&#39;t a democracy any more. Public opinion doesn&#39;t matter.]
+They just take over, and we stay on this timeline.</tw-passagedata><tw-passagedata pid="158" name="Quash terrorists" tags="" position="815,5637" size="100,100">(if: $democracy is &quot;yes&quot;)[Sorry, this isn&#39;t a democracy any more. Public opinion doesn&#39;t matter.]
 
 The terrorist groups are rounded up and sent to re-education camps.
 
-[[Well, you survived the decade.-&gt;Welcome to 2090 (Designer Planet)]]</tw-passagedata><tw-passagedata pid="160" name="2100 (Designer Planet)" tags="" position="809,5936" size="100,100">We are rich and flourishing, living on a high-tech, fully engineered planet that would be unrecognisable to people of today. We live in the constant fear that if one piece in this complex system fails, that might be the end of humanity.
+[[Well, you survived the decade.-&gt;Welcome to 2090 (Designer Planet)]]</tw-passagedata><tw-passagedata pid="159" name="2100 (Designer Planet)" tags="" position="809,5936" size="100,100">We are rich and flourishing, living on a high-tech, fully engineered planet that would be unrecognisable to people of today. We live in the constant fear that if one piece in this complex system fails, that might be the end of humanity.
 
-[[Take action]] </tw-passagedata><tw-passagedata pid="161" name="Sidebar" tags="footer" position="692,339" size="100,100">(append: ?SideBar)[\
+[[Take action]] </tw-passagedata><tw-passagedata pid="160" name="Sidebar" tags="footer" position="692,339" size="100,100">(append: ?SideBar)[\
 &lt;span class=&quot;title&quot;&gt;Survive the Century&lt;/span&gt;
 
 A cli-fi game of choice and consequence
@@ -1738,13 +1786,13 @@ Global warming: $temp °C
 Decade: $decade
 
 (click: &quot;Start again&quot;)[(reload:)]
-]</tw-passagedata><tw-passagedata pid="162" name="Slow down" tags="" position="367,1274" size="100,100">Your readers are convinced by this argument. It&#39;s important to move slowly when tackling something as important as climate change!
+]</tw-passagedata><tw-passagedata pid="161" name="Slow down" tags="" position="367,1274" size="100,100">Your readers are convinced by this argument. It&#39;s important to move slowly when tackling something as important as climate change!
 
 By 2028, the world&#39;s economy has rebounded to pre-Covid levels. People feel flush. There&#39;s a boom in luxury consumption, construction, international travel. Global greenhouse gas emissions haven&#39;t really reduced much, despite the investment in new green infrastructure.
 
 [[You made it to 2030-&gt;Welcome to 2030 (Slow Fade)]] 
 
-(set: $temp to 1.4)</tw-passagedata><tw-passagedata pid="163" name="Ecocide" tags="" position="238,1271" size="100,100">The Net-Zero Emissions Accountability Act is adopted globally by 2025, setting strict limits in place for how much carbon and other greenhouse gases can be released into the air every year. The nations of the U.N. agree that the International Court of Justice should have power to fine and enforce sanctions on anyone who violates these laws.
+(set: $temp to 1.4)</tw-passagedata><tw-passagedata pid="162" name="Ecocide" tags="" position="238,1271" size="100,100">The Net-Zero Emissions Accountability Act is adopted globally by 2025, setting strict limits in place for how much carbon and other greenhouse gases can be released into the air every year. The nations of the U.N. agree that the International Court of Justice should have power to fine and enforce sanctions on anyone who violates these laws.
 
 Bold activists start putting together court cases arguing that historical emitters should pay reparations for loss and damage from climate change.
 
@@ -1752,7 +1800,51 @@ The world declares that knowingly violating pollution laws is a crime against hu
 
 By 2029, the biggest emitters have more than halved how much they&#39;re pulluting the atmosphere, and some CEOs of large companies have mysteriously gone into hiding.
 
-[[Congratulations, you made it to 2030!-&gt;Welcome to 2030 (Ecotopia)]] </tw-passagedata></tw-storydata>
+[[Congratulations, you made it to 2030!-&gt;Welcome to 2030 (Ecotopia)]] </tw-passagedata><tw-passagedata pid="163" name="Green is the new gold" tags="" position="411,1948" size="100,100">(if: $fracking is 1)[Energy companies have to use a portion of their fracking profits to research new ways to reduce climate change, or help the world adapt to it.](else:)[We launch a number of green technology funds that invest in private businesses researching new ways to reduce climate change, or help the world adapt to it.]
+
+This sparks a lot of innovation, and mints a whole new generation of tech billionaires and green influencers. Green is the new gold, baby!
+
+[[Congrats! You made it to 2040-&gt;Welcome to 2040 (Billionaire Saviours)]] </tw-passagedata><tw-passagedata pid="164" name="Gains reversed" tags="" position="411,2190" size="100,100">Over the next few years, the world elects a number of Margaret Thatcher/Ronald Ragen-type national leaders. They argue that we&#39;ve ruined the economy by trying to control it, and we need to let the free market do its job.
+
+They loosen regulations, including environmental laws, which leads to a massive increase in emissions again.
+
+Oh, and all of the new public housing, public transport, schools and hospitals we built in the 2020s? We sell them off to private businesses.
+
+[[Well, you made it through the decade!-&gt;Welcome to 2040 (Slow Fade)]]</tw-passagedata><tw-passagedata pid="165" name="NewsHeader" tags="" position="692,567" size="100,100">&lt;div class=&quot;NHeader&quot;&gt;
+  &lt;div class=&quot;NHeading&quot;&gt;
+  # The News
+  &lt;/div&gt;
+
+  &lt;div class=&quot;NSubheading&quot;&gt;
+  All the news, all the time.
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;NDate&quot;&gt;
+  3 January 2030
+  &lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="166" name="Undermine movement (War)" tags="" position="805,2171" size="100,100">The E.U. and U.S. claim that the protests are being stirred up and funded by the Chinese government in an attempt to undermine their democracies. They claim that it&#39;s all being triggered by a Cambridge Analytica-style disinformation campaign on the hottest new social network: Spldge.
+
+Funny... China, which is seeing protests of its own, claims the same thing. 
+
+And no-one has a good explanation for why the protests are happening simultaneously in most countries in the world.
+
+Everyone is angry. Nothing is done about climate change.
+
+[[Well, you made it through the decade!-&gt;Welcome to 2040 (Climate Wars)]] </tw-passagedata><tw-passagedata pid="167" name="Undermine movement (Hooligans)" tags="" position="521,2189" size="100,100">Your news site writes off the movement as being just a bunch of kids getting themselves tied up in knots over nothing, encouraged by vandals and hooligans who just want an excuse to loot stores.
+
+After months of regular protests, when there is still no response from leaders, the activists eventually give up and the protests die down.
+
+[[Well, you made it through the decade!-&gt;Welcome to 2040 (Slow Fade)]] </tw-passagedata><tw-passagedata pid="168" name="Weak reforms" tags="" position="566,2069" size="100,100">We keep trying to reduce pollution through small, incremental changes. We slightly increase taxes on greenhouse gas emissions, but there are a lot of loopholes in these laws, and businesses generally find ways to get around changing.
+
+We are polluting less than we were in the 2020s, but we&#39;re far off the goals scientists told us we neeeded to reach to prevent catastrophic climate change.
+
+Hopefully that won&#39;t be a problem or anything.
+
+[[Well, you made it through the decade!-&gt;Welcome to 2040 (Slow Fade)]] </tw-passagedata><tw-passagedata pid="169" name="High-tech adaptation" tags="" position="1281,2485.5" size="100,100">High-tech adaptation</tw-passagedata><tw-passagedata pid="170" name="Global climate adaptation fund" tags="" position="1065,2198" size="100,100">Thanks entirely to a well-argued, impassioned editorial you wrote, rich countries cave to the pressure and agree to not only reduce their own emissions, but to also contribute to a Global Climate Fund in acknowledgement of how much they polluted the planet in the past.
+
+This fund is used to research technology that will help to stabilize the climate, and to help poorer countries adapt to more extreme weather events. 
+
+[[Well, you made it through the decade!-&gt;Welcome to 2040 (Designer Planet)]] </tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
