@@ -284,6 +284,8 @@ We hope that this game helps you to feel less hopeless and nihilistic about the 
 ]
 
 (set: $temp to 1)
+(set: $conflict to &quot;🙂&quot;)
+(set: $gdp to 80)
 (set: $decade to &quot;2020s&quot;)</tw-passagedata><tw-passagedata pid="2" name="Welcome to 2021" tags="" position="525,486" size="100,100">It&#39;s January 2021.
 
 As an important and informed person, you&#39;re aware that the world is running out of time to address the climate emergency.
@@ -302,7 +304,9 @@ Your leading story today will be an opinion piece about how the vaccines should 
 
 [[The countries that funded the vaccine development should get the vaccines first, that&#39;s only fair.-&gt;Rich get vaccines]] 
 
-(set: $temp to 1.1)</tw-passagedata><tw-passagedata pid="4" name="Green New Deal" tags="" position="321,1122" size="100,100">Hey: this could be a chance for us to fix the economy, and address the climate criss at the same time!
+(set: $temp to 1.1)
+(set: $conflict to &quot;🙂&quot;)
+(set: $gdp to 80)</tw-passagedata><tw-passagedata pid="4" name="Green New Deal" tags="" position="321,1122" size="100,100">Hey: this could be a chance for us to fix the economy, and address the climate criss at the same time!
 
 We choose to pass radical “Green New Deal” style plans that create a lot of jobs building energy-efficient public infrastructure. 
 
@@ -326,7 +330,9 @@ A lot of people are still out of work, though, and struggling.
 
 [[You made it to 2030-&gt;Welcome to 2030 (Slow Fade)]] 
 
-(set: $temp to 1.4)</tw-passagedata><tw-passagedata pid="6" name="Rich get vaccines" tags="" position="610,801" size="100,100">Rich countries hoard all the Covid vaccines, even as poorer countries start to see increasingly intense waves of the virus. 
+(set: $temp to 1.4)
+(set: $conflict to &quot;😠&quot;)
+</tw-passagedata><tw-passagedata pid="6" name="Rich get vaccines" tags="" position="611,801" size="100,100">Rich countries hoard all the Covid vaccines, even as poorer countries start to see increasingly intense waves of the virus. 
 
 Rich countries start to relax their social distancing measures, even as they see recurring waves of reinfection from countries that don&#39;t have the virus yet. It&#39;s all a mess.
 
@@ -340,7 +346,9 @@ What do you propose, oh powerful editor of the world&#39;s most-read news site?
 
 (link: &quot;Wake up, sheeple! Vaccines are a plot by sinister elites to turn everyone gay!&quot;)[(set: $leaning to &quot;slowfade&quot;)(goto: &quot;Slow economic recovery&quot;)]
 
-(set: $temp to 1.2)</tw-passagedata><tw-passagedata pid="7" name="Fair vaccine distribution" tags="" position="452,798" size="100,100">We set up a global vaccine distribution fund that ensures that the most vulnerable are protected from Covid throughout the world. It&#39;s the largest international co-operation project in living memory, and leaves the whole world feeling really warm and fuzzy about humanity&#39;s ability to work together.
+(set: $temp to 1.2)
+(set: $conflict to &quot;😠&quot;)
+(set: $gdp to 80)</tw-passagedata><tw-passagedata pid="7" name="Fair vaccine distribution" tags="" position="452,798" size="100,100">We set up a global vaccine distribution fund that ensures that the most vulnerable are protected from Covid throughout the world. It&#39;s the largest international co-operation project in living memory, and leaves the whole world feeling really warm and fuzzy about humanity&#39;s ability to work together.
 
 Covid numbers start to fall, and the people who do get sick tend to be younger, and less likely to be hospitalised or die.
 
@@ -348,7 +356,9 @@ Social distancing measures start to relax. It looks like the world will get back
 
 [[Hooray! Time to bust out some non-sweatpants pants.-&gt;Fast economic recovery]] 
 
-(set: $temp to 1.2)</tw-passagedata><tw-passagedata pid="8" name="Fast economic recovery" tags="" position="453,936" size="100,100">Economies all around the world have been battered by Covid. Countries need bold new economic recovery plans. Different groups propose different solutions. 
+(set: $temp to 1.2)
+(set: $conflict to &quot;😄&quot;)
+(set: $gdp to 80)</tw-passagedata><tw-passagedata pid="8" name="Fast economic recovery" tags="" position="453,936" size="100,100">Economies all around the world have been battered by Covid. Countries need bold new economic recovery plans. Different groups propose different solutions. 
 
 **Which economic proposal will your news site give the most time to?**
 
@@ -372,7 +382,9 @@ In 2028, scientists produce a report saying that despite the decline in manufact
 
 [[That seems like a sensible, free-market approach!-&gt;Welcome to 2030 (Billionaire Saviours)]]
 
-(set: $temp to 1.5)</tw-passagedata><tw-passagedata pid="10" name="Fossil-fuelled development" tags="" position="880,1121" size="100,100">We stimulate economies by selling new mining/drilling/ fracking rights. The economy gets better; pollution gets much worse.
+(set: $temp to 1.5)
+(set: $conflict to &quot;😠&quot;)
+</tw-passagedata><tw-passagedata pid="10" name="Fossil-fuelled development" tags="" position="880,1121" size="100,100">We stimulate economies by selling new mining/drilling/ fracking rights. The economy gets better; pollution gets much worse.
 
 [[You made it to 2030-&gt;Welcome to 2030 (Designer Planet)]] 
 
@@ -460,7 +472,8 @@ Countries quietly start to divert post-Covid economic stimulus money into beefin
 
 [[You made it to 2030-&gt;Welcome to 2030 (Climate Wars)]] 
 
-(set: $temp to 1.5)</tw-passagedata><tw-passagedata pid="14" name="Welcome to 2030 (Slow Fade)" tags="" position="473,1400" size="100,100">&lt;div class=&quot;Newspaper&quot;&gt;
+(set: $temp to 1.5)
+(set: $conflict to &quot;😡&quot;)</tw-passagedata><tw-passagedata pid="14" name="Welcome to 2030 (Slow Fade)" tags="" position="473,1400" size="100,100">&lt;div class=&quot;Newspaper&quot;&gt;
 
 &lt;div class=&quot;NHeader&quot;&gt;
   &lt;div class=&quot;NHeading&quot;&gt;
@@ -1138,11 +1151,13 @@ Millions want to resettle in more protected places. Most resettle in their own c
 [[Let&#39;s make it easier for businesses to sponsor working Visas, so people can only move to a country if they have a job there.-&gt;Employment as citizenship]]
 
 (set: $temp to 1.8)
-</tw-passagedata><tw-passagedata pid="35" name="Strongmen" tags="" position="853,2864" size="100,100">Each new strongman leader blames the others for creating the migrant crisis.
+</tw-passagedata><tw-passagedata pid="35" name="Strongmen" tags="" position="852,2864" size="100,100">Each new strongman leader blames the others for creating the migrant crisis.
 
 [[International tensions are heating up.-&gt;Global South uprising + climate wars]] 
 
-(set: $temp to 1.9)</tw-passagedata><tw-passagedata pid="36" name="Employment as citizenship" tags="" position="721,2742" size="100,100">A lot of the migrants are offered “corporate citizenship” - business visas that mean getting a job with one of the big multinationals is the only way they’re allowed to live in one of the parts of the world that are still easy to live in. Losing your job means exile.
+(set: $temp to 1.9)
+(set: $conflict to &quot;😡&quot;)
+</tw-passagedata><tw-passagedata pid="36" name="Employment as citizenship" tags="" position="721,2742" size="100,100">A lot of the migrants are offered “corporate citizenship” - business visas that mean getting a job with one of the big multinationals is the only way they’re allowed to live in one of the parts of the world that are still easy to live in. Losing your job means exile.
 
 And exile is a problem, because [[large parts of the world are becoming unlivable.-&gt;Orange Zones]]
 
@@ -1217,7 +1232,9 @@ The leaders of 50 countries in the Global South band together and say, enough. T
 
 [[What if the Global South made them agree?-&gt;Global South Strike]]
 
-(set: $temp to 2.2)</tw-passagedata><tw-passagedata pid="42" name="Reform capitalism" tags="" position="159,1926" size="100,100">We tax the rich and invest in public infrastructure and generous grant programmes.
+(set: $temp to 2.2)
+(set: $conflict to &quot;😡&quot;)
+</tw-passagedata><tw-passagedata pid="42" name="Reform capitalism" tags="" position="159,1926" size="100,100">We tax the rich and invest in public infrastructure and generous grant programmes.
 
 Freed from constant worry about their next paycheque, we start to see a lot of experiments in new forms of communal and sustainable urban living. 
 
@@ -1305,6 +1322,7 @@ Serengeti-Mara National Park is de-proclaimed as global food insecurity increase
 [[You made it to 2050.-&gt;Welcome to 2050 (Designer Planet)]] 
 
 (set: $temp to 2.8)
+(set: $conflict to &quot;😄&quot;)
 </tw-passagedata><tw-passagedata pid="48" name="Welcome to 2050 (Designer Planet)" tags="" position="1080,3325" size="100,100">&lt;div class=&quot;Newspaper&quot;&gt;
 
 &lt;div class=&quot;NHeader&quot;&gt;
@@ -1706,6 +1724,7 @@ This cools America but causes drought across India and Africa.
 [[What?! It&#39;s 2060 ALREADY??-&gt;Welcome to 2060 (Climate Wars)]]
 
 (set: $temp to 2.3)
+(set: $conflict to &quot;😡&quot;)
 </tw-passagedata><tw-passagedata pid="63" name="Geo-engineering FAIL" tags="" position="1242,5717" size="100,100">We drop tonnes of chemical nutrients into the ocean, hoping to stimulate the growth of phytoplanktons that will trap carbon dioxide from the air and cool the planet.
 
 Unfortunately, this triggers a horrible, unexpected cascade of impacts that no-one anticipated. 80% of all ocean life dies within 2 months. WHOOPS!
@@ -1715,7 +1734,8 @@ No-one is sure exactly what went wrong, because all the scientists suffocated to
 [[Actually, how are you reading this right now? You&#39;re dead!-&gt;Dead]]
 
 (set: $temp to ??)
-</tw-passagedata><tw-passagedata pid="64" name="Stalling" tags="" position="450,3779" size="100,100">We choose to do more research, and keep debating, and talking, and talking, and stalling.
+(set: $gdp to ??)
+(set: $conflict to ??)</tw-passagedata><tw-passagedata pid="64" name="Stalling" tags="" position="450,3779" size="100,100">We choose to do more research, and keep debating, and talking, and talking, and stalling.
 
 By the end of the decade, we haven’t done anything yet.
 
@@ -1992,6 +2012,7 @@ After nine years, there’s still no clear winner. People are exhausted of fight
 [[Yes, heck, this has gone on long enough.-&gt;Armstice]]
 
 (set: $temp to 2.5)
+(set: $conflict to &quot;🤬&quot;)
 </tw-passagedata><tw-passagedata pid="74" name="Engineered crop blight" tags="" position="872,4357" size="100,100">We will never surrender! The war goes on. 
 
 Six months later, Japan releases an engineered blight that wipes out the world’s maize crops.
@@ -2005,6 +2026,7 @@ The war continues.
 [[Well, you made it to 2070.-&gt;Welcome to 2070 (Climate Wars)]] 
 
 (set: $temp to 2.8)
+(set: $conflict to &quot;🤬&quot;)
 </tw-passagedata><tw-passagedata pid="75" name="Armstice" tags="" position="1039,4304" size="100,100">Peace is declared.
 
 After a decade of fighting, society is exhausted. We&#39;re ready to do whatever we need to do to ensure that war never breaks out again.
@@ -2020,6 +2042,7 @@ Society has invested billions into their militaries. We decide to retrain and re
 [[Over the next few years, things start to look much better for humanity.-&gt;Welcome to 2070 (Designer Planet)]] 
 
 (set: $temp to 2)
+(set: $conflict to &quot;🙂&quot;)
 </tw-passagedata><tw-passagedata pid="76" name="Welcome to 2070 (Climate Wars)" tags="" position="878,4600" size="100,100">&lt;div class=&quot;Newspaper&quot;&gt;
 
 &lt;div class=&quot;NHeader&quot;&gt;
@@ -2216,6 +2239,7 @@ The Council appoints a &quot;Media Fairness Monitor&quot; to your newsroom. She 
 [[You made it to 2070!-&gt;Welcome to 2070 (Designer Planet)]]
 
 (set: $temp to 1.7)
+(set: $conflict to &quot;😄&quot;)
 </tw-passagedata><tw-passagedata pid="82" name="Hackers attack space fleet" tags="" position="1157,4146" size="100,100">The space fleet becomes the target of attack by rogue states who try to hack it to benefit their own microclimates. 
 
 How should we deal with these rogue actors?
@@ -2703,7 +2727,9 @@ There&#39;s not enough food. Our glorious civilization falls apart and most peop
 
 [[Actually, how are you reading this right now? You&#39;re dead!-&gt;Dead]]
 
-(set: $temp to ??)</tw-passagedata><tw-passagedata pid="105" name="Welcome to 2080 (Designer Planet)" tags="" position="1124,5179" size="100,100">
+(set: $temp to ??)
+(set: $gdp to ??)
+(set: $conflict to ??)</tw-passagedata><tw-passagedata pid="105" name="Welcome to 2080 (Designer Planet)" tags="" position="1124,5179" size="100,100">
 &lt;div class=&quot;Newspaper&quot;&gt;
 
 &lt;div class=&quot;NHeader&quot;&gt;
@@ -3275,6 +3301,7 @@ You focussed on reducing emissions early in the century, took bold steps to buil
 [[A number of strongmen leaders emerge in rich countries that say they&#39;ll pull out of the international migrant treaty.-&gt;Strongmen]]
 
 (set: $temp to 1.9)
+(set: $conflict to &quot;😡&quot;)
 </tw-passagedata><tw-passagedata pid="129" name="Patchwork of solutions" tags="" position="405,3051" size="100,100">Rich countries agree to reduce their own emissions, but refuse to contribute to a global climate change fund. “Let every country deal with their own problems”, they say. 
 
 In polluting countries, this leads to a patchwork of ineffective solutions like a personal sustainability score to try to get individuals to change their consumption habits, and some more cap-and-trade projects that are full of loopholes. Some cities are now fully “green”, but others are emitting more than ever.
@@ -3387,9 +3414,9 @@ Thanks for playing!
 
 We hope you&#39;ve enjoyed thinking about what the rest of the century might look like, and that you&#39;re inspired to have some influence in **the real world**.
 
-Our choices matter. The climate has already changed, and it will continue to change. But that doesn&#39;t mean it&#39;s over. There are still a lot of decisions we can make that will lead to dramatically different futures.
+Our choices matter. The climate has already changed, and it will continue to change. But that doesn&#39;t mean it&#39;s over. There are still a lot of decisions we can make that will lead to dramatically different futures. Some decisions open up multiple pathways, and some close down our options. Choices create winners and losers. And all choices have consequences.
 
-**Here&#39;s a final choices you can make:**
+**Now, make a choice in the real world:**
 
 [[Play again-&gt;Intro]]
 
@@ -3406,6 +3433,7 @@ Our choices matter. The climate has already changed, and it will continue to cha
 [[A number of strongmen leaders emerge. Most of them are too focused on their domestic conflicts to care about international climate treaties.-&gt;Strongmen]]
 
 (set: $temp to 1.9)
+(set: $conflict to &quot;😡&quot;)
 </tw-passagedata><tw-passagedata pid="138" name="Global South Strike" tags="" position="1002,3136" size="100,100">The global south enter a strike. They stay united and cut off natural resources. They refuse to export food, minerals and metals, until the rich world stops polluting and agrees to contribute to a global environmental repair fund.
 
 This hits the rich world where it hurts. The manufacturing industries can&#39;t produce much. The new iPhone launch is delayed. Worse, no-one in the rich world can get their hands on a decent cup of coffee. 
@@ -3413,6 +3441,7 @@ This hits the rich world where it hurts. The manufacturing industries can&#39;t 
 [[The rich world caves after six months.-&gt;Late-stage designer planet]]
 
 (set: $temp to 2.2)
+(set: $conflict to &quot;😠&quot;)
 </tw-passagedata><tw-passagedata pid="139" name="Surprising success geo-engineering" tags="" position="999,3549" size="100,100">An unlikely alliance of Saudi billionaires who miss being able to go outside without dying, disgruntled former SpaceX engineers and K-Pop stars looking to leave a legacy surprise the world by launching a fleet of space mirrors to reflect sunlight away from the planet. 
 
 A K-Pop supergroup promotes the project by releasing a song called SPACE SPACE PLANET BABY that tops the charts in every country.
@@ -3461,6 +3490,7 @@ A series of small-scale wars erupt around the world, that are really proxy wars 
 [[You made it to 2050.-&gt;Welcome to 2050 (Climate Wars)]]
 
 (set: $temp to 2.1)
+(set: $conflict to &quot;😡&quot;)
 </tw-passagedata><tw-passagedata pid="146" name="Experimental Orange Zones" tags="" position="626,3042" size="100,100">Alternative forms of society start to emerge in the hinterlands. They&#39;re tough landscapes, but these become incubators for alternative economies and value systems. 
 
 [[You made it to 2050.-&gt;Welcome to 2050 (Billionaire Saviours)]]
@@ -3511,6 +3541,7 @@ This leads to a much fairer society, but delays the transition to renewable ener
 [[You made it through the decade!-&gt;Welcome to 2040 (Designer Planet)]]
 
 (set: $temp to 2.1)
+(set: $conflict to &quot;😄&quot;)
 </tw-passagedata><tw-passagedata pid="152" name="Sexual revolution" tags="" position="1148,2547" size="100,100">UBIs allow many more women to enter politics. Over the next few years, these progressive leaders pass a number of democratic reforms to make sure that wealth is more fairly distributed.
 
 Overall, people are much richer and better educated.
@@ -3537,6 +3568,7 @@ In an effort to prove their machismo, a lot of them start small-scale wars and b
 [[International tensions are heating up.-&gt;Global South uprising + climate wars]] 
 
 (set: $temp to 2.2)
+(set: $conflict to &quot;😡&quot;)
 </tw-passagedata><tw-passagedata pid="154" name="Quash terrorists" tags="" position="1107,5535" size="100,100">(if: $democracy is &quot;yes&quot;)[Sorry, this isn&#39;t a democracy any more. Public opinion doesn&#39;t matter.]
 
 The terrorist groups are rounded up and sent to re-education camps.
@@ -3551,10 +3583,13 @@ You focussed on adapting to climate change rather than trying to stop it. You go
 
 A cli-fi game of choice and consequence
 
-Global warming: $temp °C
 Decade: $decade
 
-(click: &quot;Start again&quot;)[(reload:)]
+Global warming: $temp °C
+Conflict: $conflict
+World GDP:  $gdp t$
+
+(link: &quot;Start again&quot;)[(goto: &quot;Intro&quot;)]
 ]</tw-passagedata><tw-passagedata pid="157" name="Slow down" tags="" position="367,1274" size="100,100">Your readers are convinced by this argument. It&#39;s important to move slowly when tackling something as important as climate change!
 
 By 2028, the world&#39;s economy has rebounded to pre-Covid levels. People feel flush. There&#39;s a boom in luxury consumption, construction, international travel. Global greenhouse gas emissions haven&#39;t really reduced much, despite the investment in new green infrastructure.
@@ -3652,6 +3687,7 @@ Quality of life improves rapidly for most people in the world.
 [[[You made it to 2050.-&gt;Welcome to 2050 (Designer Planet)]]
 
 (set: $temp to 2.5)
+(set: $conflict to &quot;🙂&quot;)
 </tw-passagedata><tw-passagedata pid="169" name="Magic technology fix" tags="" position="0,3160" size="100,100">Wow, uh, that was lucky.
 
 Six months later, the scientists walk out of their lab saying they&#39;ve genetically engineered a type of plankton that absorbs and destroys greenhouse gases. The plankton is very cheap to produce, you can perfectly control its rate of reproduction, and there are zero negative side-effects.
@@ -4108,7 +4144,10 @@ Global South countries band together and argue that they shouldn’t have to con
 [[Absolutely not!-&gt;Later Global South Strike]]
 
 (set: $temp to 1.7)
-</tw-passagedata><tw-passagedata pid="193" name="Learn more" tags="" position="625,6478" size="100,100"># About
+</tw-passagedata><tw-passagedata pid="193" name="Learn more" tags="" position="625,6478" size="100,100"># Learn more
+A wonderful, simple primer to what we need to do to fix climate change is this 10 minute video from Kurzesagt: (link: &quot;Is it too late to stop climate change? Well, it&#39;s complicated.&quot;)[(gotoURL: &quot;https://www.youtube.com/watch?v=wbR-5mHI6bo&amp;ab_channel=Kurzgesagt%E2%80%93InaNutshell&quot;)]
+
+### About this game
 *Survive the Century* is a choose-your-own adventure game about the political, environmental and social choices the human race will face between 2020-2100 as we adapt to the ravages of climate change.
 
 This game is a work of fiction, but it is informed as far as possible by real science. 
