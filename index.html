@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="STC outline" startnode="1" creator="Twine" creator-version="2.3.9" ifid="D1C9BBD6-8FD7-4F60-B23A-DA84E4FB08D3" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900');
+<tw-storydata name="STC outline" startnode="134" creator="Twine" creator-version="2.3.9" ifid="D1C9BBD6-8FD7-4F60-B23A-DA84E4FB08D3" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
 /* These are the default options for the entire browser window */
@@ -264,18 +264,23 @@ Your choices will determine whether humanity will survive the 21st century.
 Psst... along the way, look out for &lt;a class=blue-fake-link&gt;blue links&lt;/a&gt; to read news stories from the future, written by Lauren Beukes, Rajat Chaudhuri, Maria Turtschaninoff and Sophia Al-Maria.
 
 (link-reveal: &quot;Credits&quot;)[
-Created by Sam Beckbessinger, Simon Nicholson and Christopher Trisos
+Created by Sam Beckbessinger, Simon Nicholson and Christopher Trisos.
 
-Featuring short fiction by Lauren Beukes, Rajat Chaudhuri, Maria Turtschaninoff and Sophia Al-Maria
+Featuring short fiction by Lauren Beukes, Rajat Chaudhuri, Maria Turtschaninoff and Sophia Al-Maria.
 
-Invaluable scientific contributions (and hilarious headlines) by (all names here) co-ordinated through the National Socio-Environmental Synthesis Center (SESYNC) of the University of Maryland
+Invaluable scientific contributions (and hilarious headlines) by (all names here) co-ordinated through the National Socio-Environmental Synthesis Center (SESYNC) of the University of Maryland.
 
-Supported by (funders)
+This is a not-for-profit project supported by the Global Strategic Communications Council Opportunity Fund and Climate Interactive. 
 ]
 
 (link-reveal: &quot;About&quot;)[
-About content here
-(Learn more/take action)
+*Survive the Century* is a choose-your-own adventure game about the political, environmental and social choices the human race will face between 2020-2100 as we adapt to the ravages of climate change.
+
+This game is a work of fiction, but it is informed as far as possible by real science. 
+
+We hope that this game helps you to feel less hopeless and nihilistic about the future. Our choices matter. It&#39;s not over. There are still a lot of decisions we can make that will lead to dramatically different futures.
+
+[[Take action]]
 ]
 
 (set: $temp to 1)
@@ -3378,17 +3383,25 @@ Global fish populations collapse due to ocean acidification
 (set: $decade to &quot;2090s&quot;)
 </tw-passagedata><tw-passagedata pid="136" name="Take action" tags="" position="625,6328" size="100,100"># Take Action
 
-Thanks for playing! We hope this has helped you think about things. The main thing we wanted to communicate is that your choices matter.
+Thanks for playing! 
 
-Want to do something in the real world? Here&#39;s a final choices you can make.
+We hope you&#39;ve enjoyed thinking about what the rest of the century might look like, and that you&#39;re inspired to have some influence in **the real world**.
 
-((Play again.))
+Our choices matter. The climate has already changed, and it will continue to change. But that doesn&#39;t mean it&#39;s over. There are still a lot of decisions we can make that will lead to dramatically different futures.
 
-((Share this game.))
+**Here&#39;s a final choices you can make:**
 
-((Find a climate justice group near you.))
+[[Play again-&gt;Intro]]
 
-((Learn more.))</tw-passagedata><tw-passagedata pid="137" name="Civil war version" tags="" position="982,2700" size="100,100">All of this migration within countries leads to a lot of internal tension between different social groups. A number of civil wars erupt all around the world.
+(link-reveal: &quot;Share this game&quot;)[
+(link: &quot;Facebook&quot;)[(gotoURL: &quot;https://www.facebook.com/sharer/sharer.php?u=https://xenodochial-hawking-f01666.netlify.app/&quot;)]
+(link: &quot;Twitter&quot;)[(gotoURL: &quot;https://twitter.com/intent/tweet?url=https://xenodochial-hawking-f01666.netlify.app/&amp;text=You are the senior editor of the world&#39;s most popular and trusted news organization. Your choices will determine whether humanity will survive the 21st century. No pressure!&quot;)]
+(link: &quot;Email&quot;)[(gotoURL: &quot;mailto:info@example.com?&amp;subject=&amp;body=https://xenodochial-hawking-f01666.netlify.app/ You are the senior editor of the world&#39;s most popular and trusted news organization. Your choices will determine whether humanity will survive the 21st century. No pressure!&quot;)]
+]
+
+(link: &quot;Find a climate justice group near you&quot;)[(gotoURL: &quot;https://350.org/get-involved/&quot;)]
+
+[[Learn more]]</tw-passagedata><tw-passagedata pid="137" name="Civil war version" tags="" position="982,2700" size="100,100">All of this migration within countries leads to a lot of internal tension between different social groups. A number of civil wars erupt all around the world.
 
 [[A number of strongmen leaders emerge. Most of them are too focused on their domestic conflicts to care about international climate treaties.-&gt;Strongmen]]
 
@@ -4095,6 +4108,23 @@ Global South countries band together and argue that they shouldn’t have to con
 [[Absolutely not!-&gt;Later Global South Strike]]
 
 (set: $temp to 1.7)
+</tw-passagedata><tw-passagedata pid="193" name="Learn more" tags="" position="625,6478" size="100,100"># About
+*Survive the Century* is a choose-your-own adventure game about the political, environmental and social choices the human race will face between 2020-2100 as we adapt to the ravages of climate change.
+
+This game is a work of fiction, but it is informed as far as possible by real science. 
+
+We hope that this game helps you to feel less hopeless and nihilistic about the future. Our choices matter. It&#39;s not over. There are still a lot of decisions we can make that will lead to dramatically different futures.
+
+[[Take action]]
+
+### Credits
+Created by Sam Beckbessinger, Simon Nicholson and Christopher Trisos.
+
+Featuring short fiction by Lauren Beukes, Rajat Chaudhuri, Maria Turtschaninoff and Sophia Al-Maria.
+
+Invaluable scientific contributions (and hilarious headlines) by (all names here) co-ordinated through the National Socio-Environmental Synthesis Center (SESYNC) of the University of Maryland.
+
+This is a not-for-profit project supported by the Global Strategic Communications Council Opportunity Fund and Climate Interactive. 
 </tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
