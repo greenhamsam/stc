@@ -53,13 +53,33 @@ tw-sidebar {
 	color: #EE6C4D; 
 	font-weight: 900; 
 }
-.enchantment-link:visited, tw-link:visited, .enchantment-link.visited, tw-link.visited, a:visited {
+.enchantment-link:visited, tw-link:visited, a:visited {
 	color: #9F3921; 
 	font-weight: 900; 
 }
 /* Links when the mouse is over them */
 .enchantment-link:hover, tw-link:hover, a:hover {
 	color: #9F3921; 
+	font-weight: 900; 
+}
+
+.blue-fake-link {
+  	color: #3B89EF; 
+	font-weight: 900;
+}
+
+.story-link tw-link {
+	color: #3B89EF; 
+	font-weight: 900; 
+}
+
+.story-link:visited tw-link:visited {
+	color: #3B89EF; 
+	font-weight: 900; 
+}
+
+.story-link:hover tw-link: hover {
+	color: #3D5A80; 
 	font-weight: 900; 
 }
 
@@ -233,13 +253,15 @@ $(function() {
     setupPlayfab(playfabID, trackedVariables, State);
   });
 });
-</script><tw-passagedata pid="1" name="Intro" tags="" position="527,333" size="100,100">You are the senior editor of the world&#39;s most popular and trusted news organization. You have the enviable power to set the news agenda, and thereby shift the zeitgeist.
+</script><tw-passagedata pid="1" name="Intro" tags="" position="528,333" size="100,100">You are the senior editor of the world&#39;s most popular and trusted news organization. You have the enviable power to set the news agenda, and thereby shift the zeitgeist.
 
 Your choices will determine whether humanity will survive the 21st century.
 
 [[No pressure.-&gt;Welcome to 2021]] 
 
 --
+
+Psst... along the way, look out for &lt;a class=blue-fake-link&gt;blue links&lt;/a&gt; to read news stories from the future, written by Lauren Beukes, Rajat Chaudhuri, Maria Turtschaninoff and Sophia Al-Maria.
 
 (link-reveal: &quot;Credits&quot;)[
 Created by Sam Beckbessinger, Simon Nicholson and Christopher Trisos
@@ -349,7 +371,7 @@ In 2028, scientists produce a report saying that despite the decline in manufact
 
 [[You made it to 2030-&gt;Welcome to 2030 (Designer Planet)]] 
 
-(set: $temp to 1.6)</tw-passagedata><tw-passagedata pid="11" name="Welcome to 2030 (Ecotopia)" tags="" position="311,1400" size="100,100">&lt;div class=&quot;Newspaper&quot;&gt;
+(set: $temp to 1.6)</tw-passagedata><tw-passagedata pid="11" name="Welcome to 2030 (Ecotopia)" tags="" position="310,1399" size="100,100">&lt;div class=&quot;Newspaper&quot;&gt;
 
 &lt;div class=&quot;NHeader&quot;&gt;
   &lt;div class=&quot;NHeading&quot;&gt;
@@ -390,7 +412,7 @@ In 2028, scientists produce a report saying that despite the decline in manufact
 
 Pacific Islanders and Arctic communities flee to the former Rustbelt as sea ice melts and oceans rise
 
-[[California passes ban on selling and trading animal products: boom in illicit underground meat restaurants-&gt;Meat raid]]
+&lt;span class=story-link&gt;[[California passes ban on selling and trading animal products: boom in illicit underground meat restaurants-&gt;Meat raid]]&lt;/span&gt;
 
 First ever category 5 cyclone in the southern hemisphere devastates Mozambique
 
@@ -529,7 +551,7 @@ Vampire bats seen in Dallas: experts say no risk, but possible benefits if they 
 
 Bolsonaro issues new permits for logging in the Amazon after indigenous communities devastated by Covid-19
 
-[[Matrimonial ad: Indian NRI Seeks Suitable Match-&gt;Matrimony]] 
+&lt;span class=story-link&gt;[[Matrimonial ad: Indian NRI Seeks Suitable Match-&gt;Matrimony]]&lt;/span&gt;
 
 Sundarbans region sets new record for number of super-cyclones
 
@@ -582,7 +604,7 @@ Record damages due to floods in the Midwest are only matched by damage caused by
 
 The Rising Dead: the clean-up crew that’s dealing with more than 1,000 thawing bodies on Everest’s Rainbow Road
 
-[[Vaccine Queen opens the first of 100 tech universities across West Africa-&gt;Vaccine Queen]] 
+&lt;span class=story-link&gt;[[Vaccine Queen opens the first of 100 tech universities across West Africa-&gt;Vaccine Queen]]&lt;/span&gt;
 
 Teenage inventor of cloud brightening tech becomes world&#39;s youngest billionaire
 
@@ -1259,7 +1281,7 @@ Restoring so much land to its natural state allows for many formerly threatened 
 
 Advanced countries reap benefits as Brain Drain peaks leaving towns empty in the developing world.
 
-[[Mass abductions hobble India&#39;s guest talent programme-&gt;Mass abductions]]
+&lt;span class=story-link&gt;[[Mass abductions hobble India&#39;s guest talent programme-&gt;Mass abductions]]&lt;/span&gt;
 
 U.S. puts refugees to work in &quot;mine towns&quot; in a massive carbon dioxide removal project despite humanitarian concerns
 
@@ -1391,7 +1413,7 @@ Japan becomes first country to be powered entirely by hydrogen
 
 Montreal protocol banning ozone gases dissolved as U.S. pulls out; swing vote Amy Coney Barrett ruules that treaty is an infringement on individual liberties of corporate persons and sovereign states
 
-[[Exile Nation: What happens when you&#39;re forced out of paradise?-&gt;Exile Nation]]
+&lt;span class=story-link&gt;[[Exile Nation: What happens when you&#39;re forced out of paradise?-&gt;Exile Nation]]&lt;/span&gt;
 
 Missing the cold? New frozen theme parks bring a welcome chill to your bones
   
@@ -1448,7 +1470,7 @@ The Sounds of Summer: how one project is archiving the changes to what we are -a
 
 &quot;We&#39;ve turned the tide, but we should expect more disasters in the coming decade&quot;, say climate experts, pointing to stabilizing temperatures
 
-[[Laugh of the day: review of a &quot;Green Mall&quot; by a grumpy Gen X shopaholic-&gt;Green Mall Review]]
+&lt;span class=story-link&gt;[[Laugh of the day: review of a &quot;Green Mall&quot; by a grumpy Gen X shopaholic-&gt;Green Mall Review]]&lt;/span&gt;
 
 Since the domestication of ostriches, home protein diets have improved significantly.
 
@@ -2034,7 +2056,7 @@ Society has invested billions into their militaries. We decide to retrain and re
 
 Fighting continues as war leaves no clear winner, but plenty of losers
 
-[[EXCLUSIVE: Leaked transcript of video call between US Leader-for Life and African President of the Free States-&gt;Leaked transcript]]
+&lt;span class=story-link&gt;[[EXCLUSIVE: Leaked transcript of video call between US Leader-for Life and African President of the Free States-&gt;Leaked transcript]]&lt;/span&gt;
 
 Sea wars and Cclosure of the Suez Canal by Egypt prevents European food aid from reaching drought-stricken India
 
@@ -2162,7 +2184,7 @@ Amazon basin formally loses &quot;rainforest&quot; categorisation, reclassified 
 
 Berlin conference decolonised: communities given back access to land despite national borders
 
-[[Obituaries: Capitalism (1760-2068)-&gt;Obituary for Capitalism]] 
+&lt;span class=story-link&gt;[[Obituaries: Capitalism (1760-2068)-&gt;Obituary for Capitalism]]&lt;/span&gt;
 
 World&#39;s last billionaire leaves for Mars: &quot;It might not have an atmosphere, but at least you won&#39;t try to tax my hard-earned money!&quot; says woman who inherited 90% of her wealth
 
@@ -2400,7 +2422,7 @@ The movement fizzles out.
 
 Arctic First Nations school established for intergenerational knowledge exchange about how to thrive in the cold
 
-[[Report from the Global Indigenous Peoples Stewardship Summit-&gt;GIPSS]]
+&lt;span class=story-link&gt;[[Report from the Global Indigenous Peoples Stewardship Summit-&gt;GIPSS]]&lt;/span&gt;
  
 Scientists worried: did we cool too quickly? Will we need to adapt our adaptations?
 
@@ -2858,7 +2880,7 @@ We finally abolish nation states and replace them with a network of local democr
 
 Solar powered Cape to Cairo magnetic levitation train ‘derails’ mid-journey in the Congo basin causing severe impacts to the home of mountain gorillas causing mass outcry across the world
 
-[[Finnish children celebrate first snow day in 80 years-&gt;Snow Day]]
+&lt;span class=story-link&gt;[[Finnish children celebrate first snow day in 80 years-&gt;Snow Day]]&lt;/span&gt;
  
 DNA testing - variety of ancestral roots gives us a new sense of place as planetary citizens living in our local environments
 
@@ -2924,7 +2946,7 @@ Billionaires start a reality show where lucky outsiders compete for limited spot
 
 “It’s worse than I expected, but better than the streets” - part 1 of our 3-part investigative reporting on  North America’s largest COHO operations (Spamazon)
 
-[[Trouble in Paradys - Virtual Worlds: Real Targets-&gt;Trouble in Paradys]] 
+&lt;span class=story-link&gt;[[Trouble in Paradys - Virtual Worlds: Real Targets-&gt;Trouble in Paradys]]&lt;/span&gt;
 
 Thousands apply for one surrogate position: compensation for surrogacy at all-time low as supply of hopefuls outpaces demand
 
@@ -2951,7 +2973,7 @@ Some crazy fringe religious groups hate the domes and the decadent lifestyles th
 (link-reveal-goto: &quot;Yes&quot;, &quot;Quash terrorists&quot;)[(set: $democracy to &quot;no&quot;)]
 
 (link-reveal-goto: &quot;No&quot;, &quot;Quash terrorists&quot;)[(set: $democracy to &quot;yes&quot;)]
-</tw-passagedata><tw-passagedata pid="114" name="Welcome to 2090 (Designer Planet)" tags="" position="1039,5793" size="100,100">
+</tw-passagedata><tw-passagedata pid="114" name="Welcome to 2090 (Designer Planet)" tags="" position="1056,5790" size="100,100">
 &lt;div class=&quot;Newspaper&quot;&gt;
 
 &lt;div class=&quot;NHeader&quot;&gt;
@@ -3062,11 +3084,11 @@ Large project to restoring continental ice sheets in Antarctica begins
 
 Two-Headed wolves slaughtered by doomsday cult, The Volcanists, who believe a major volcanic eruption will cool the planet
 
-[[Art review: The Tate Twilight-&gt;Tate Twilight]]
+&lt;span class=story-link&gt;[[Art review: The Tate Twilight-&gt;Tate Twilight]]&lt;/span&gt;
 
 Efforts to curb superflu transmission in new Delhi failed, The New Race cult detonates a nuclear device in the epicenter of the pandemic
 
-[[Restaurant review: The Blue Queen of D.C.-&gt;Blue Queen of DC]]
+&lt;span class=story-link&gt;[[Restaurant review: The Blue Queen of D.C.-&gt;Blue Queen of DC]]&lt;span&gt;
  
 Submerged cities of the world form union, declare independence  
 
