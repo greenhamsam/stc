@@ -45,3 +45,34 @@ There are five main storylines that act as "highways" through the game, with ple
 5. **Designer Planet**: abandon nature and embrace a fully technological future.
 
 Players will be able to hop between different storylines as they play (they might start off on an Ecosocialist path, but then make TERRIBLE DECISIONS and end up in the Climate Wars timeline; or start out relying on billionaires to save us, but later decide that democracy is better). There will also be opportunities for surprise along particular storylines as disasters occur, societies tip suddenly into new ways of being and understanding, or climate impacts turn out to be better or worse than anticipated. Players can also replay the story as many times as they like.
+
+## CREDITS
+- Created by: Sam Beckbessinger
+- Project leads: Christopher Trisos and Simon Nicholson
+- Short fiction by: Lauren Beukes, Maria Turtschaninoff, Mohale Mashigo, Rajat Chaudhuri, and Sophia Al-Maria
+- Primary sponsors: and Climate Interactive and the Global Strategic Communications Council Opportunity Fund (the GSCC) 
+- Web development and publishing by: Electric Book Works
+- Illustrations by: Annika Brandow
+- Design by: Karen Lilje
+
+Scientific contributors:
+- Andrew Jones
+- Brian Beckage
+- Colin Carlson
+- Daniele Visioni
+- David Keller
+- David Morrow
+- Holly Buck
+- Jay Fuhrman
+- Juan B. Moreno-Cruz
+- Katharine J. Mach
+- Laura M. Pereira
+- Leslie Paul Tiele
+- Maggie Clifford
+- Mariia Belaia
+- Nick Simpson
+- Oliver Geden
+- Olufemi Taiwo
+- Sara Metcalf
+- Valentina Aquila
+
